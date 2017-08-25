@@ -1,97 +1,360 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Eric Muckley</title>
-<link rel="stylesheet" href="css/common.css" type="text/css" />
-<link rel="stylesheet" href="css/responsive.css" type="text/css" />	
-
-	
-	<!--
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <style>
-body {
-    background-image: url("homebackground.jpg");
-	background-size: 70%;
-    background-repeat: no-repeat;
-}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
+<body>
 
--->
-</head>
-	
-	
-	
-<body>	
-	
-<!--<img src="mountainbanner.jpg" alt="can't find image" width="40%" height="40%">*/-->
-
-<h1> <font face="arial"> Welcome </font></h1>
-
-<p style="width: 600px; text-align: justify;"> 	
-
-	I built these pages to 
-	display some of my projects. <br>
-	Visit one of the pages or see contact info below. <br>
-	Thanks for visiting.</p>
-<nav>
-<ul>
-<li> <a href="https://ericmuckley.github.io/chamberproject/">Software development and instrument integration</a>
-</li>
-<li>
-<a href="https://ericmuckley.github.io/spectralanalysis/">Automated spectral analysis</a>
-</li>
-<li>
-<a href="https://ericmuckley.github.io/analysis/">Sensor data analytics and machine learning</a>
-</li>
-<li>
-<a href="https://ericmuckley.github.io/qcmarray/">QCM sensor array</a>
-</li>
-<li>
-<a href="https://ericmuckley.github.io/publications/">Publications and presentations</a>
-</li>		
-<li>
-<a href="https://ericmuckley.github.io/artwork/">Artwork and graphic design</a>
-</li>
-<li>
-<a href="https://ericmuckley.github.io/music/">Original music</a>
-</li>
-	<!--
-<li>
-<a href="https://ericmuckley.github.io/links/">Contact and other links</a>
-</li>	-->
-</ul>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-medium w3-padding" style="z-index:3;width:300px;font-weight:normal;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Hide menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-22">Eric Muckley</h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hardware/software integration</a> 
+    <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
+    <a href="#machinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning for sensor data</a>
+<a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
+    <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications + presentations</a>
+    <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Original artwork + music</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact info + other links</a>
+  </div>
 </nav>
-	
-<!-- <div>
-<article>
-				
-</article>
-</div> -->
 
-<br>
-<h3> <font face="arial"> Contact info and other links </font></h3>	
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Eric Muckley</span>
+</header>
 
-	<!--<p>To learn more, view my publications, or contact me, <br> visit the following links: </p> -->
-<nav>
-<ul>
-<li>
-<a href="https://www.linkedin.com/in/eric-muckley-5b097462" target="_blank">LinkedIn</a></li>
-<li>
-<a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a></li>	
-<li>
-<a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a></li>
-<li>
-<a href="http://orcid.org/0000-0001-7114-5424" target="_blank">ORCID</a></li>
-</ul>
-</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header ---------------------------------------------------------------------------------------------------------->
+  <div class="w3-container" style="margin-top:40px" id="showcase">
+    <h1 class="w3-xxxlarge"><b>Welcome</b></h1>
+    <!--<h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>-->
+    <h4> I built this page to display some of my projects. <br>
+    Scroll down or click on a link to explore more. </h4>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+  </div>
+  
+  
+	
+
+   <!-- MAIN THEME PHOTO ------------------------------------------------------------------------------------------>
+  <div class="w3-row-padding">
+    <div class="w3">
+      <img src="summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar">
+    </div> 
+	</div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>	
+
 	
 	
+  <!-- hardware/software  ----------------------------------------------------------------------------------------------- -->
+  <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Hardware/software integration for automated instrument control</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+    
+    <p style="text-align: justify;">
+ Nanoscale engineering of functional materials has led to development of 0-dimensional 
+(quantum dots), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXene, etc.) 
+structures which show promise as building blocks for molecular-scale optical, electronic, and sensing devices. 
+Beacuse of their extremely high surface area to volume ratio, thin film and/or nanostructured materials often exhibit 
+multi-modal (electronic, optical, morphological, viscoelastic, etc.) responses to a broad range of different 
+environmental stimuli (temperature, pressure, humidity, oxygen concentration, etc.).
+ 
+      
+      
+	    
+Since surface properties
+ may be strongly influenced by ambient environmental conditions, comprehensive characterization of a 
+ material's interaction with its environment is vital for improving the stability and performance of 
+ nanomaterial-based technogies including organic electronics and environmental sensors like those deployed 
+ in wireless sensing networks for internet of things (IoT) applications. 
+	    
+ In order to efficently 
+ characterize the environmental response of multiple materials under a range of conditions, 
+ it is necessary to employ a flexible environmental system in which ambient conditions can be controlled 
+ and multiple responses of materials/devices are probed <i>in situ</i>. </p>
+    
+    <p style="text-align: justify;">
+  For this task, I developed and built a novel testing chamber 
+  capable of characterization of electrical, optical, and gravimetric response of a variety of
+  nanomaterials and thin films under controlled environmental conditions. A schematic diagram of the 
+  system is shown below. The device/material under test is situated in a vacuum chamber where temperature, 
+  light intensity, pressure, humidity, and concentrations of gas mixtures can be controlled in real-time. 
+  While environmental conditions are changing, electronic properties of the sample are measured using a combination of
+  source-measure units, network analyzers for electrochemical impedance spectroscopy, and a semiconductor 
+  characterization system. Optical absorption is measured by optical spectrometer, and the optical and electrical 
+  measurements are correlated to mass changes in the material under test by multiple quartz crystal microbalance (QCM) systems. 
+  Correlation of optoelectronic properties to a mass changes provide valuable information about the effect of
+  adsorption or desorption of gas/vapor on the functional properties of the material.</p>
+    
+<p style="width: 600px; text-align: justify;"> 
+ Below is a photo of the actual system at the Center for Nanophase Materials Sciences at Oak Ridge National Laboratory.
+  The vacuum chamber is on the right with instrumentation below it, with the PC for controlling
+  the system on the left. Novelty of the system lies mostly in its central software, which controls over 10 different instruments and allows automated data collection and full environmental control. The software allows the user to input a sequence in which temperature, pressure, multiple gas flows, and light intensity inside the chamber are varied while response of the materials under test are measured. The system allows rapid, automated measurement of multiple samples under specific controlled environmental conditions. The graphic user interface 
+  is implemented using LabVIEW, shown below.</p>  
+	  
+   <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="systemflowchart.jpg" style="width:100%" onclick="onClick(this)" alt="environmental system flowchart">
+	<img src="chamber.jpg" style="width:100%" onclick="onClick(this)" alt="measurement chamber">    
+    </div> 
+    <div class="w3-half">
+      <img src="screenshot.jpg" style="width:100%" onclick="onClick(this)" alt="screenshot of custom control software">
+        <img src="chamberlandscape2.jpg" style="width:100%" onclick="onClick(this)" alt="experimental apparatus">
+	    </div>
+	  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+ 
+  </div>
+	
+	
+	
+	
+
+<!-- BATCH SENSOR ANALYTICS  ---------------------------------------------------------------------------------------->
+    <div class="w3-container" id="batchsensoranalytics" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Batch sensor analytics</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+    <p style="text-align: justify;"> SECTION COMING SOON! </p>
+  </div>   	
+	
+	
+	
+	
+
+<!-- MACHINE LEARNING OF SENSOR DATA-------------------------------------------------------------------------------------->
+    <div class="w3-container" id="machinelearning" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Machine learning for intelligent sensor networks</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+    <p style="text-align: justify;"> SECTION COMING SOON! </p>
+  </div> 	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<!-- QCM                        -------------------------------------------------------------------------------------->
+    <div class="w3-container" id="qcm" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Low-cost sensor array for environmental monitoring and IoT</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+    <p style="text-align: justify;"> SECTION COMING SOON! </p>
+  </div> 	
+	
+	
+	
+	
+	
+	
+	
+	
+<!-- PUBLICATIONS AND PRESENTATIONS --------------------------------------------------------------------------------------- -->
+    <div class="w3-container" id="pubs" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Publications + presentations</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">	
+	
+<h1 class="w3-xlarge w3-text-black"><b>Selected peer-reviewed journal publications</b></h1>
+<p>		
+<b>Muckley, E.S.</b>, Jacobs, C.B., Vidal, K., Mahalik, J.P., Kumar, R., Sumpter, B.G. and Ivanov, I.N., 2017. New Insights on Electro-Optical Response of Poly (3, 4-ethylenedioxythiophene): Poly (styrenesulfonate) Film to Humidity. ACS Applied Materials and Interfaces, 9(18), pp.15880-15886.
+<br><br>
+Jacobs, C.B., Maksov, A.B., <b> Muckley, E.S. </b>, Collins, L., Mahjouri-Samani, M., Ievlev, A., Rouleau, C.M., Moon, J.W., Graham, D.E., Sumpter, B.G. and Ivanov, I.N., 2017. UV-activated ZnO films on a flexible substrate for room temperature O2 and H2O sensing. Scientific Reports, 7.		
+<br><br>
+Jacobs, C.B., Wang, K., Ievlev, A.V., Collins, L., <b>Muckley, E.S.</b> and Ivanov, I.N., 2017. Functional two/three-dimensional assembly of monolayer WS2 and nickel oxide. Journal of Photonics for Energy, 7(1), pp.014001-014001.	
+<br><br>
+<b>Muckley, E.S.</b>, Lynch, J., Kumar, R., Sumpter, B. and Ivanov, I.N., 2016. PEDOT: PSS/QCM-based multimodal humidity and pressure sensor. Sensors and Actuators B: Chemical, 236, pp.91-98.
+<br><br>
+<b>Muckley, E.S.</b>, Nelson, A.J., Jacobs, C.B. and Ivanov, I.N., 2016. Multimodal probing of oxygen and water interaction with metallic and semiconducting carbon nanotube networks under ultraviolet irradiation. Journal of Photonics for Energy, 6(2), pp.025506-025506.
+<br><br>
+Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and Ivanov, I.N., 2016. Imaging of electrical response of NiOx under controlled environment with sub-25-nm resolution. Journal of Photonics for Energy, 6(3), pp.038001-038001.
+<br><br>
+<b>Muckley, E.S.</b>, Miller, N., Jacobs, C.B., Gredig, T. and Ivanov, I.N., 2016. Morphology-defined interaction of copper phthalocyanine with O2/H2O. Journal of Photonics for Energy, 6(4), pp.045501-045501.
+</p>
+
+<h1 class="w3-xlarge w3-text-black"><b>International conference and invited presentations</b></h1>
+<p>
+<b>Muckley, E.S.</b>, Jacobs, C.B., Vidal, K., Mahalik, J.P., Kumar, R., Sumpter, B.G. and Ivanov, I.N., Effect of humidity on electronic and ionic conduction in PEDOT:PSS. August 2017. SPIE Organic Photonics + Electronics. San Diego, CA, USA. 
+<br><br>
+<b>Muckley, E.S.</b>, Naguib, M., Wang, H.-W., Vleck, L., Osti, N.C., Sacci, R.L., Sang, X. , Unocic, R.R., Xie, Y., Tyagi, M., Mamontov, E., Page, K.L., Kent, P.R.C., Nanda, J., and Ivanov, I.N., Structural, electrical, and gravimetric responses of K- and Mg-intercalated MXenes to water. August 2017. SPIE Organic Photonics + Electronics. San Diego, CA, USA. 
+<br><br>	
+<b>Muckley, E.S.</b> and  Ivanov, I.N.,  Machine learning and automation for probing environmental response of sensor materials. May 2017. Comenius University. Bratislava, Slovakia. 
+<br><br>
+<b>Muckley, E.S.</b>,  Miller, N., Gredig, T., and Ivanov, I.N., Effect of film morphology on oxygen and water interaction with copper phthalocyanine. August 2016. SPIE Organic Photonics + Electronics. San Diego, CA, USA. 
+<br><br>
+Jacobs, C.B., Wang, K., Ievlev, A.V., Collins, L., <b>Muckley, E.S.</b> and Ivanov, I.N., Functional two/three-dimensional assembly of monolayer WS2 and nickel oxide. August 2016. SPIE Organic Photonics +Electronics. San Diego, CA, USA. 
+<br><br>
+<b>Muckley, E.S.</b>,  Nelson, A., Jacobs, C B., and Ivanov, I.N., Effect of UV irradiation on adsorption/desorption of oxygen and water on carbon nanotubes. February 2016. SPIE Photonics West. San Francisco, CA, USA. 
+<br><br>
+<b>Muckley, E.S.</b>,  Anazagasty, C., Jacobs, C.B., Hianik, T., and Ivanov, I.N., Low-cost scalable quartz crystal microbalance array for environmental sensing. August 2016. SPIE Organic Photonics + Electronics. San Diego, CA, USA. 
+<br><br>
+<b>Muckley, E.S.</b>, Jacobs, C.B., Wang, K., Collins, L., Ievlev, A., and Ivanov, I.N., Spatially resolved resistance of NiO nanostructures under humid environment. February 2016. SPIE Photonics West. San Francisco, CA, USA.
+<br><br>
+<b>Muckley, E.S.</b> and Ivanov, I.N., Peeking at the Mechanisms of sensor operation and environment-induced degradation of electronic devices. June 2015. Brazilian Synchrotron Light Laboratory. Campinas, Brazil. 
+<br><br>
+<b>Muckley, E.S.</b> and Gredig, T., Effect of morphology on performance of organic thin film solar cells. May 2014. California State University Long Beach Student Research Competition. Long Beach, CA, USA. 
+<br><br>
+</p>
+	    
+	    
+<h1 class="w3-xlarge w3-text-black"><b>Published conference preceedings</b></h1>
+<b>Muckley, E.S.</b>, Anazagasty, C., Jacobs, C.B., Hianik, T. and Ivanov, I.N., 2016, September. Low-cost scalable quartz crystal microbalance array for environmental sensing. In SPIE Organic Photonics+ Electronics (pp. 99440Y-99440Y). International Society for Optics and Photonics.
+<br><br>
+<b>Muckley, E.S.</b>, Miller, N., Gredig, T. and Ivanov, I.N., 2016, September. Effect of film morphology on oxygen and water interaction with copper phthalocyanine. In SPIE Organic Photonics+ Electronics (pp. 99440V-99440V). International Society for Optics and Photonics.
+<br><br>
+<b>Muckley, E.S.</b>, Nelson, A.J., Jacobs, C.B. and Ivanov, I.N., 2016, February. Effect of UV irradiation on adsorption/desorption of oxygen and water on carbon nanotubes. In SPIE OPTO (pp. 97451K-97451K). International Society for Optics and Photonics.
+<br><br>
+Jacobs, C.B., Wang, K., Ievlev, A.V., <b>Muckley, E.S.</b> and Ivanov, I.N., 2016, September. Towards functional assembly of 3D and 2D nanomaterials. In SPIE Nanoscience+ Engineering (pp. 99290C-99290C). International Society for Optics and Photonics.
+<br><br>
+Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and Ivanov, I.N., 2016, February. Spatially resolved resistance of NiO nanostructures under humid environment. In SPIE OPTO (pp. 97491Q-97491Q). International Society for Optics and Photonics.
+<br><br>
+<b>Muckley, E.S.</b>, Miller, N., Jacobs, C.B., Gredig, T. and Ivanov, I.N., 2016. Morphology-defined interaction of copper phthalocyanine with O2/H2O. Journal of Photonics for Energy, 6(4), pp.045501-045501.
+</p>    
+	        
+<h1 class="w3-xlarge w3-text-black"><b>White papers</b></h1>
+<p>	
+Degradation mechanisms in low bandgap polymer-fullerene photovoltaic devices.	
+<a href="OPVdegradation.pdf" download>Download PDF</a>
+<br><br>
+Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, California.
+<a href="solar_feasibility_study.pdf" download>Download PDF</a>
+<br><br>
+Review and recommendation for United States water policy.	
+<a href="water_policy_recommendation.pdf" download>Download PDF</a>
 <br>
-<br>
-<p> Eric Muckley. All rights reserved. Copyright &copy; 2017.</p>
+</p>
+<br><br>
+		
+<p style="width: 600px; text-align: justify;"> 
+For a full list of publications and other projects, visit my pages at  
+<a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a> or 
+<a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a>.
+  </div>  
+	
+
+  
+	
+	
+	
+	
+  <!-- art  --------------------------------------------------------------------------------------------------------------------- -->
+  <div class="w3-container" id="art" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Original artwork and music</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+	  
+    	  <p> Click on an image to view in higher resolution. <br>
+		  To see more art + music, visit <a href="https://ericmuckley.github.io/artwork/">my art page</a>.
+	 </p>
+	  
+   <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="longlake.jpg" style="width:100%" onclick="onClick(this)" alt="long lake, sierra nevada, california">
+	<img src="wavetree.jpg" style="width:100%" onclick="onClick(this)" alt="tree on beach">    
+    </div> 
+    <div class="w3-half">
+      <img src="sixcrane.jpg" style="width:100%" onclick="onClick(this)" alt="label for six crane IPA">
+      <img src="barn.jpg" style="width:100%" onclick="onClick(this)" alt="barn in the snow">
+	    </div>
+	  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+	</div>
+	
+
+  <!-- contact  ------------------------------------------------------------------------------------------------------------------ -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Contact info and other links</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+<p>
+ To contact me or learn more, visit my pages at:<br>
+<a href="https://www.linkedin.com/in/eric-muckley-5b097462" target="_blank">LinkedIn</a><br> 
+<a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a><br>					
+<a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a><br>
+<a href="http://orcid.org/0000-0001-7114-5424" target="_blank">ORCID</a>	 
+    </p>
+  </div>
+  
+  <!-- SAMPLE SECTION
+    <div class="w3-container" id="INSERT MENU ID HERE" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>INSERT SECTION TITLE HERE</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+    <p> INSERT TEXT OF SECTION HERE </p>
+  </div>   -->
+
+  
+<!-- ------------------------------------------------------------------------------------------------------------------- -->  
+  
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container-->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:60px;padding-right:58px"><p class="w3-center">Eric Muckley. All rights reserved. Copyright &copy; 2018.</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
 </body>
 </html>
-
-	   
-	   
