@@ -85,16 +85,11 @@ Beacuse of their extremely high surface area to volume ratio, thin film and/or n
 multi-modal (electronic, optical, morphological, viscoelastic, etc.) responses to a broad range of different 
 environmental stimuli (temperature, pressure, humidity, oxygen concentration, etc.).
  
-      
-      
-	    
 Since surface properties
  may be strongly influenced by ambient environmental conditions, comprehensive characterization of a 
  material's interaction with its environment is vital for improving the stability and performance of 
  nanomaterial-based technogies including organic electronics and environmental sensors like those deployed 
- in wireless sensing networks for internet of things (IoT) applications. 
-	    
- In order to efficently 
+ in wireless sensing networks for internet of things (IoT) applications. In order to efficently 
  characterize the environmental response of multiple materials under a range of conditions, 
  it is necessary to employ a flexible environmental system in which ambient conditions can be controlled 
  and multiple responses of materials/devices are probed <i>in situ</i>. </p>
@@ -112,7 +107,7 @@ Since surface properties
   Correlation of optoelectronic properties to a mass changes provide valuable information about the effect of
   adsorption or desorption of gas/vapor on the functional properties of the material.</p>
     
-<p style="width: 600px; text-align: justify;"> 
+<p style="text-align: justify;"> 
  Below is a photo of the actual system at the Center for Nanophase Materials Sciences at Oak Ridge National Laboratory.
   The vacuum chamber is on the right with instrumentation below it, with the PC for controlling
   the system on the left. Novelty of the system lies mostly in its central software, which controls over 10 different instruments and allows automated data collection and full environmental control. The software allows the user to input a sequence in which temperature, pressure, multiple gas flows, and light intensity inside the chamber are varied while response of the materials under test are measured. The system allows rapid, automated measurement of multiple samples under specific controlled environmental conditions. The graphic user interface 
@@ -147,9 +142,16 @@ Since surface properties
 <!-- BATCH SENSOR ANALYTICS  ---------------------------------------------------------------------------------------->
     <div class="w3-container" id="batchsensoranalytics" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Batch sensor analytics</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
- 
-    <p style="text-align: justify;"> SECTION COMING SOON! </p>
+    <hr style="width:200px;border:1px solid black" class="w3-round">			
+			
+			    <p style="text-align: justify;"> SECTION UNDER CONSTRUCTION!			<br>
+	Effective analysis and full utilization of large complex datasets can be prohibitively time-consuming without the right tools. For rapidly processing sensor data, I created an automated system which models sensor response by fitting the raw signal to a suite of mathematical models. In the exmaple shown below, sensing material is exposed to a pulsed stimulus, which may correspond to any environmental change (temperature fluctuation, pressure spike, humidity shift, etc). Response of the sensor during exposure to the environmental stimulus is automatically divided into regions of interest (ROI) where the interesting dynamics occur. 
+    Signals in each ROI are then normalized and background is subtracted so that kinetics can be compared across each ROI. A mathematical model is selected (either automatically or manually, based on the data type) and the signal in each ROI is fit to the model. Full fits, fitting parameters and fit quality metrics are extracted for comprehensive characteriation of the sensor dynamics and response. The algorithm is robust enough to handle data streams emanating from diverse sources (i.e. gravimetic, electrical, optical, etc.) so that complex data streams from multi-modal sensor arrays may be processed efficiently.
+  </p>
+  
+ <img src="pythonbatchprocessing.jpg" alt="cant find image" width="45%" height="45%">
+  
+  
   </div>   	
 	
 	
@@ -161,10 +163,58 @@ Since surface properties
     <h1 class="w3-xxlarge w3-text-black"><b>Machine learning for intelligent sensor networks</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
  
-    <p style="text-align: justify;"> SECTION COMING SOON! </p>
+    <p style="text-align: justify;"> SECTION UNDER CONSTRUCTION!		<br>
+			
+			Full utilization of complex multi-dimensional datasets cannot be achieved without 
+    the use of more advanced data processing. After initial batch processing/normalization/regularization of data, it is sometimes 
+  beneficial to employ the use of advanced analytical methods, including statistical treatment and machine learning techniques. 
+   There may be several independent variables relevant for the charcterization of environmental sensor response, 
+    so dimensionalality reduction and/or principal component analysis is often required for efficient identification of 
+    relationships between the sensor behavior and its environment. 
+  </p>
+    
+     <p style="text-align: justify;">
+       Shown below are some examples of machine learning algorithms implemented for enhanced utilization of data 
+       collected during sensor characterization. Machine learning libraries I often use include the 
+       <a href="http://scikit-learn.org/stable/" target="_blank">scikit-learn library</a> in Python and the 
+      <a href="https://www.mathworks.com/help/stats/classificationlearner-app.html" target="_blank">classification learner</a>
+        application in MatLab. 
+    
+    Here are simple examples of binary classifer algorithms in implemented python for distinguishing 
+    the response of a quartz crystal upon exposure to CO<sub>2</sub> (blue) and O<sub>2</sub> (red). The vertical axis in each 
+       plot corresponds to frequency shift of the crystal during gas exposure, and horizontal axis corresponds to motional 
+       impedance shift of the crystal during gas exposure. The raw data is shown in the plot on the left, while 
+       data with learned classification boundaries using 4 different classification algorithms are shown to the right. In this case, 
+       the k-nearest neighbors (k-NN) algorithm results in >95% accuracy in distinguishing between CO<sub>2</sub> 
+       and O<sub>2</sub>.
+
+  </p>
+  
+<img src="classifiers.jpg" alt="cant find image" width="45%" height="45%">
+  
+  <p style="width: 600px; text-align: justify;">
+    Artificial neural networks (ANNs) are powerful, popular machine learning tools used for approximating classification 
+    and regression/forecasting problems without the need for an analytical model. 
+    One of the main challenges associated with the use of ANNs is optimization of the network design, as ANNs can 
+    contain multiple hidden neuron layers, each with a several neurons. To investigate the performance of 
+    different ANN architectures for a given dataset, I designed a system to test the accuracy and training time of 
+    ANNs with a different number of neurons in the 1st and 2nd hidden layers of a network and measured the mean square error associated 
+    the predictions of each network, as well as the time required for complete training of each network. The diagram below shows an 
+    example of ANN performances and training times when the number of neurons in the 1st and 2nd hidden layers are altered. 
+    To account for the stochastic nature of ANNs, each pixel represents the 
+    average performance/training time of 25 different networks with the given configuration of hidden neurons.
+   Since performance and training time are clearly related in this example, 
+  the desired balance between high accuracy and low training time can be selected as appropriate for the specific application.</p>
+  
+<img src="nnmaps.jpg" alt="cant find image" width="45%" height="45%">
+
+<p style="text-align: justify;"> 
+
+  A published article where I describe the use of an ANN for distinguishing between pressure changes and humidity changes by 
+  a polymer-coated quartz crystal sensor can be found 
+  <a href="http://www.sciencedirect.com/science/article/pii/S0925400516307304" target="_blank">here</a>.
+			</p>
   </div> 	
-	
-	
 	
 	
 	
@@ -278,11 +328,9 @@ For a full list of publications and other projects, visit my pages at
   <div class="w3-container" id="art" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Original artwork and music</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
-	  
-    	  <p> Click on an image to view in higher resolution. <br>
-		  To see more art + music, visit <a href="https://ericmuckley.github.io/artwork/">my art page</a>.
-	 </p>
-	  
+		<h3> To see more art + music, visit <a href="https://ericmuckley.github.io/artwork/">my art page</a>.</h3>
+    	  <p> Click on an image to view in higher resolution. </p>
+		
    <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
