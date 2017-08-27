@@ -246,7 +246,66 @@ The diagram below shows an example of ANN performances and training times when t
     <h1 class="w3-xxlarge w3-text-black"><b>Signal processing + deconvolution</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
  
-    <p> SECTION COMING SOON! </p>
+    <p> UNDER CONSTRUCTION </p>
+	    
+	    
+	    
+	<p style="text-align: justify;"> 
+  Analysis of spectral data is central to nearly all fields of science and engineering. Deconvolution of spectra 
+  into their constituent peaks is important for improving signal resolution and tracking the properties of individual peaks 
+  when multiple components are changing. In most commercial peak-finding software, the user is expected to  
+  designate the positions at which they expect to find main peaks, usally by clicking on the highest 
+  peaks visible in the spectra. For analysis of hundreds or thousands of spectra, manual selection of peaks 
+  is not possible. Even a small amount of spectra which contain large numbers of peaks are often too complex to be 
+  deconvoluted manually. Below is an example of Raman spectra measured at different locations on a protein substrate.
+  </p>
+  
+ <img src="allspectra.png" alt="cant find image" width="45%" height="45%">
+  
+  <p style="width: 600px; text-align: justify;"> 
+  Manual selection of peaks for each spectra would be prohibitely time-consuming. I built a peak finding algorithm into  
+    spectral analysis software I worte in Python. Using a variable peak threshold results in identification of the peaks 
+    in each spectra, shown below for one example spectrum.
+  </p>
+  
+ <img src="peakfinder.png" alt="cant find image" width="45%" height="45%">
+  
+  <p style="width: 600px; text-align: justify;"> 
+  With accurate estimates for peak positions, each spectrum can be fit to a combination of 
+  Gaussisn peaks. An example of peaks is shown below.
+   </p>
+    
+ <img src="caseinpeaks.png" alt="cant find image" width="45%" height="45%">
+  <p style="width: 600px; text-align: justify;"> 
+ The combination of Gaussian peaks (black line) accurately reproduces the original spectrum (red line), shown below.
+    </p>
+  
+  
+ <img src="caseinpeakfits.png" alt="cant find image" width="45%" height="45%">
+  
+  
+    <p style="width: 600px; text-align: justify;"> 
+The threshold for peak identification can be raised or lowered based on the desired fitting quality. With each major peak identified, 
+      the peak positions, amplitudes, and widths can be compared between spectra or tracked over time. Below are histograms taken from 
+      over 1000 peaks from the same Raman spectra measurement. In this way, automated spectral analysis yields 
+    reproducible, accurate characterization of peaks when manual peak selection and fitting is not possible.
+    </p>
+  
+ <img src="centershistogram.png" alt="cant find image" width="45%" height="45%">
+  <br>
+ <img src="amplitudeshistogram.png" alt="cant find image" width="45%" height="45%">
+  <br>
+ <img src="widthshistogram.png" alt="cant find image" width="45%" height="45%">
+
+    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
   </div>   
 	
 	
@@ -352,22 +411,21 @@ Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, Cali
 Review and recommendation for United States water policy.	
 <a href="water_policy_recommendation.pdf" download>Download PDF</a>
 </p>
-<br>
- <hr style="width:200px;border:1px solid black" class="w3-round">
-<p>	 
-	<b>Undergraduate thesis: </b>	    
+	    
+<br>    
+<h1 class="w3-xlarge w3-text-black"><b>Theses</b></h1>
+<p>	
+Undergraduate thesis:	    
 <a href="http://digitalcommons.calpoly.edu/physsp/2/" target="_blank">Constructing a magneto-optical trap for cold atom trapping</a>
 <br><br>
-	<b>Master of science thesis: </b>
+Master of science thesis:
 <a href="https://csulb-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=01CALS_ALMA991013381179702910&context=L&vid=01CALS_ULB&search_scope=EVERYTHING&tab=everything&lang=en_US" target="_blank">Optimization of film morphology for the performance of organic thin film solar cells</a>
-	
 
 <br><br>	
 	    
 <p style="text-align: justify;"> 
-For a full list of publications and other projects, visit my pages at  
-<a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a> or 
-<a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a>.
+For a full list of publications and other projects, visit my pages at <a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a> or 
+<a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a>.
 
   </div>  
 	
