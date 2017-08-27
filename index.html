@@ -152,7 +152,7 @@ Since surface properties
 	    
 <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-    <div class="w3">
+    <div class="w3-half">
       <img src="pythonbatchprocessing.jpg" style="width:100%" onclick="onClick(this)" alt="batch sensor characterization">
     </div> 
 	</div>
@@ -179,48 +179,61 @@ Since surface properties
     <p style="text-align: justify;"> SECTION UNDER CONSTRUCTION!		<br>
 			
 After processing/normalization/regularization of data, it is often
-  necessary to employ more advanced analysis methods, including statistical techniques and machine learning algorithms.
-       Shown below are some examples of machine learning algorithms implemented for enhanced utilization of data 
-       collected during sensor characterization. Machine learning libraries I often use include the 
+  necessary to employ more advanced statistical techniques and/or machine learning algorithms. I primarily use the 
        <a href="http://scikit-learn.org/stable/" target="_blank">scikit-learn library</a> in Python and the 
       <a href="https://www.mathworks.com/help/stats/classificationlearner-app.html" target="_blank">classification learner</a>
-        application in MatLab. 
-    
-    Here are simple examples of binary classifer algorithms in implemented python for distinguishing 
-    the response of a quartz crystal upon exposure to CO<sub>2</sub> (blue) and O<sub>2</sub> (red). The vertical axis in each 
-       plot corresponds to frequency shift of the crystal during gas exposure, and horizontal axis corresponds to motional 
-       impedance shift of the crystal during gas exposure. The raw data is shown in the plot on the left, while 
-       data with learned classification boundaries using 4 different classification algorithms are shown to the right. In this case, 
+        library in MatLab for machine learning treatment of sensor data. Shown below are simple examples of binary classifer algorithms designed to distinguish between the 
+    the response of a quartz crystal during exposure to CO<sub>2</sub> (blue points) and O<sub>2</sub> (red points). 
+	    Regularized data is shown in the plot on the left while 
+       data with learned classification boundaries using different classification algorithms are shown to the right. In this case, 
        the k-nearest neighbors (k-NN) algorithm results in >95% accuracy in distinguishing between CO<sub>2</sub> 
-       and O<sub>2</sub>.
-
-  </p>
-  
-<img src="classifiers.jpg" alt="cant find image" width="45%" height="45%">
-  
-  <p style="width: 600px; text-align: justify;">
-    Artificial neural networks (ANNs) are powerful, popular machine learning tools used for approximating classification 
-    and regression/forecasting problems without the need for an analytical model. 
-    One of the main challenges associated with the use of ANNs is optimization of the network design, as ANNs can 
-    contain multiple hidden neuron layers, each with a several neurons. To investigate the performance of 
-    different ANN architectures for a given dataset, I designed a system to test the accuracy and training time of 
-    ANNs with a different number of neurons in the 1st and 2nd hidden layers of a network and measured the mean square error associated 
-    the predictions of each network, as well as the time required for complete training of each network. The diagram below shows an 
-    example of ANN performances and training times when the number of neurons in the 1st and 2nd hidden layers are altered. 
-    To account for the stochastic nature of ANNs, each pixel represents the 
-    average performance/training time of 25 different networks with the given configuration of hidden neurons.
-   Since performance and training time are clearly related in this example, 
+       and O<sub>2</sub>.  </p>
+ 
+  <p style="text-align: justify;">
+    Artificial neural networks (ANNs) are powerful machine learning tools used for approaching classification 
+    and regression/forecasting problems without the need for an analytical model. One of the primary challenges associated 
+	  with the use of ANNs is optimization of the network design, as ANNs may 
+    contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and 
+	quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy
+	 achieved by the network. I study performance of different ANN architectures for a given dataset by comparing 
+	 prediction accuracy and training time for networks containing different numbers of neurons in multiple hidden layers. 
+The diagram below shows an example of ANN performances and training times when the number of neurons in the 1st and 2nd hidden layers are altered. To account for the stochastic nature of ANNs, each pixel represents the 
+    average performance/training time of 25 different networks.
+	  
   the desired balance between high accuracy and low training time can be selected as appropriate for the specific application.</p>
-  
-<img src="nnmaps.jpg" alt="cant find image" width="45%" height="45%">
 
 <p style="text-align: justify;"> 
 
-  A published article where I describe the use of an ANN for distinguishing between pressure changes and humidity changes by 
-  a polymer-coated quartz crystal sensor can be found 
+  A published article where I describe the use of ANNs for distinguishing between pressure changes and humidity changes can be found 
   <a href="http://www.sciencedirect.com/science/article/pii/S0925400516307304" target="_blank">here</a>.
-			</p>
+I describe deep learning applications for gas sensing/identification <a href="https://spie.org/Publications/Proceedings/Paper/10.1117/12.2237942" target="_blank">here</a>, and algorithms for classifying between oxygen nad water based on adsorption/desrption kinetics <a href="https://www.nature.com/articles/s41598-017-05265-5" target="_blank">here</a>.
+	
+	    </p>
+
+	    <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3">
+      <img src="classifiers.jpg" style="width:100%" onclick="onClick(this)" alt="classification of gsa sensor data">
+    </div> 
+	</div>
+<div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="nnmaps.jpg" style="width:100%" onclick="onClick(this)" alt="effects of hidden layer neurons on performance and training time">
+<img src="nnmaps.jpg" style="width:100%" onclick="onClick(this)" alt="effects of learning rate on performance and training time">
+    </div> 
+	</div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+	      
   </div> 	
+	
+	
 	
 	
 	
