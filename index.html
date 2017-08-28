@@ -25,7 +25,7 @@ body {font-size:16px;}
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
     <a href="#machinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning for sensor data</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Deep learning for noise analysis</a>  
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"Noise analysis with deep learning</a>  
     <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
     <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Presentations</a>
@@ -245,66 +245,59 @@ The diagram below shows an example of ANN performances and training times when t
     <div class="w3-container" id="peaks" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Signal processing + deconvolution</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
- 
-    <p> UNDER CONSTRUCTION </p>
 	    
+<p style="text-align: justify;"> 
+  Analysis of spectral data is central to nearly all fields of science and engineering. Deconvoluting a spectrum 
+  into its constituent peaks is essential for tracking the properties of individual components 
+  during dynamic peak shifting. In most commercial peak-fitting software, the end user must 
+  designate the positions at which they expect to find primary peaks, usally by clicking on the most obvious 
+  peaks present in the spectrum. For analysis of hundreds or thousands of spectra, manual selection of peaks 
+  is not possible. Even a single spectrum which contains a large number of peaks is often too complex to be 
+  deconvoluted manually. Below is an example of Raman spectra measured at different locations on a protein substrate. Manual selection of peaks for each spectrum would be prohibitely time consuming. I built a peak fitting algorithm which allows simple automated identification of peaks, shown below. 
+</p>
+    
+   <p text-align: justify;"> 
+  With accurate estimates for peak positions, each spectrum can be fit to a linear combination of 
+  Gaussian peaks (or any other probability density distribution), as shown below. The combination of peaks (black line) accurately reproduces the original spectrum (red line). The threshold for peak identification can be raised or lowered based on the desired fitting quality and the number of peaks present. After each major peak is identified, the peak positions, amplitudes, and widths are extracted and compared between spectra or tracked over time. Below are histograms measured from over 1000 peaks from the same Raman spectroscopy experiments. The automated spectral analysis algorithm yields accurate, rapid, and reproducible characterization of peak data when manual peak selection and fitting is undesirable or impossible.
+    </p>    
 	    
-	    
-	<p style="text-align: justify;"> 
-  Analysis of spectral data is central to nearly all fields of science and engineering. Deconvolution of spectra 
-  into their constituent peaks is important for improving signal resolution and tracking the properties of individual peaks 
-  when multiple components are changing. In most commercial peak-finding software, the user is expected to  
-  designate the positions at which they expect to find main peaks, usally by clicking on the highest 
-  peaks visible in the spectra. For analysis of hundreds or thousands of spectra, manual selection of peaks 
-  is not possible. Even a small amount of spectra which contain large numbers of peaks are often too complex to be 
-  deconvoluted manually. Below is an example of Raman spectra measured at different locations on a protein substrate.
-  </p>
-  
  <img src="allspectra.png" alt="cant find image" width="45%" height="45%">
-  
-  <p style="width: 600px; text-align: justify;"> 
-  Manual selection of peaks for each spectra would be prohibitely time-consuming. I built a peak finding algorithm into  
-    spectral analysis software I worte in Python. Using a variable peak threshold results in identification of the peaks 
-    in each spectra, shown below for one example spectrum.
-  </p>
-  
  <img src="peakfinder.png" alt="cant find image" width="45%" height="45%">
-  
-  <p style="width: 600px; text-align: justify;"> 
-  With accurate estimates for peak positions, each spectrum can be fit to a combination of 
-  Gaussisn peaks. An example of peaks is shown below.
-   </p>
-    
  <img src="caseinpeaks.png" alt="cant find image" width="45%" height="45%">
-  <p style="width: 600px; text-align: justify;"> 
- The combination of Gaussian peaks (black line) accurately reproduces the original spectrum (red line), shown below.
-    </p>
-  
-  
  <img src="caseinpeakfits.png" alt="cant find image" width="45%" height="45%">
-  
-  
-    <p style="width: 600px; text-align: justify;"> 
-The threshold for peak identification can be raised or lowered based on the desired fitting quality. With each major peak identified, 
-      the peak positions, amplitudes, and widths can be compared between spectra or tracked over time. Below are histograms taken from 
-      over 1000 peaks from the same Raman spectra measurement. In this way, automated spectral analysis yields 
-    reproducible, accurate characterization of peaks when manual peak selection and fitting is not possible.
-    </p>
-  
- <img src="centershistogram.png" alt="cant find image" width="45%" height="45%">
-  <br>
- <img src="amplitudeshistogram.png" alt="cant find image" width="45%" height="45%">
-  <br>
- <img src="widthshistogram.png" alt="cant find image" width="45%" height="45%">
 
+		    <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="allspectra.png" style="width:100%" onclick="onClick(this)" alt="Raman spectra">
+ <img src="caseinpeaks.png" style="width:100%" onclick="onClick(this)" alt="Gaussian peaks extracted from a single spectrum">
+    </div> 
+    <div class="w3-half">
+<img src="peakfinder.png" style="width:100%" onclick="onClick(this)" alt="detection of peaks in Raman spectrum">
+<img src="caseinpeakfits.png" style="width:100%" onclick="onClick(this)" alt="raw spectrum and fitted spectrum using identified peaks">
+	</div>
+																	     <div class="w3-third">
+      <img src="centershistogram.png" style="width:100%" onclick="onClick(this)" alt="histogram of over 1000 peak positions detected automatically">
+    </div>   
+  <div class="w3-third">
+      <img src="amplitudeshistogram.png" style="width:100%" onclick="onClick(this)" alt="histogram of over 1000 peak centers detected automatically">
+    </div>  
+	  <div class="w3-third">
+      <img src="widthshistogram.png" style="width:100%" onclick="onClick(this)" alt="histogram of over 1000 peak centers detected automatically">
+    </div>   															
+															
+	</div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>    
+	    
     
-	    
-	    
-	    
-	    
-	    
-	    
-	    
 	    
   </div>   
 	
@@ -316,7 +309,7 @@ The threshold for peak identification can be raised or lowered based on the desi
 	
   <!-- NOISE ------------------------------------------------------------------------------------------------     -->	
     <div class="w3-container" id="noise" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-black"><b>Deep learning for noise analysis</b></h1>
+    <h1 class="w3-xxlarge w3-text-black"><b>Noise analysis with deep learning</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
  
     <p> SECTION COMING SOON! </p>
