@@ -25,7 +25,8 @@ body {font-size:16px;}
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
     <a href="#machinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning for sensor data</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Noise analysis with deep learning</a>  
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Noise analysis with deep learning</a> 
+    <a href="#broadband" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
     <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
     <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Presentations</a>
@@ -258,13 +259,8 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
     <div class="w3-container" id="noise" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Noise analysis with deep learning</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
- 
-    <p> SECTION COMING SOON </p>
 	
 <p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. Fortunately, it is often possible to obtain useful information from analysis of noise signals. I developed software which performs batch analysis of correlated electrochemical noise. Information buried in the noise may be used for environmental sensing applications in which little or no power is needed for the sensor operation. Shown below are frequency-dependent voltage and current noise measured from metallic carbon nanotubes exposed to different humidities over time. Using the humidity-dependent noise to train an artificial neural network allows accurate prediction of humidity levels when electrochemical noise is monitored.</p>						   
-								   
-	
-
 <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-third">
@@ -299,10 +295,58 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
 	
 	
 	
+		     
+		     
+		     
+		     
+		     
+		     
+
+<!-- broadband materials characterization   ------------------------------------------------------------------------------------>
+    <div class="w3-container" id="broadband" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-black"><b>Multiscale ultra-wide frequency materials characterization</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+     
+<p style="text-align: justify;">
+The explosion of new low-dimensional materials and nanostructures highlights the importance of comprehensive high-throughput functional characterization. For characterizing environmental response of materials for sensor applications in particular, it is important to link mesoscale response to nanoscale phenomena under a broad range of excitation frequencies. We begin by using gravimetric techniques such as thermogravimetric analysis (TGA) and quartz crystal microbalance (QCM) to quantify gas/vapor uptake of materials under different environments at nanogram resolution. Analyte uptake is then correlated to changes in functional properties which we measure under ultra-wide frequency excitation. Diret current (DC) electrical resistance, current-voltage (I-V) characteristics, and gate-bias/transistor behavior is measured at steady state (0 Hz). At higher frequencies (0.01 mHz - 8 MHz range), ionic transport, capacitance, and electrical impedance is characterized. These measurements are linked to results from optical experiemnts measured at high frequencies (1 THz range) which enables a "stitching together" of envionmental response all the way from 0 Hz to THz range.</p>
+
+     
+<p style="text-align: justify;">
+The ultra-wide frequency mesoscale characterization is then correlated to nanoscale phenomena using morphological/structural information obtained from atomic force microscopy (AFM), and electrical/surface potential measurements obtained from Kelvin probe force microscopy (KPFM). This workflow allows comprehensive materials characterization and allows us to link the environmental response of sensor materials across an ultra-wide frequency range and connent mesoscale to nanoscale, optical to electronic, and functional response to gravimetric response.</p>
+
+	    
+<!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-twothird">
+      <img src="multimodeimage.jpg" style="width:100%" onclick="onClick(this)" alt="multiscale, ultra-wide frequency materials characterization">
+	  </div>											  
+	  </div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>   
+	    
+	    
+  </div> 	
+		     
+		     
+		     
+		     
+		     
+		     
+		     
+		     
+		     
+		     
 	
 	
 
-<!-- QCM                        -------------------------------------------------------------------------------------->
+<!-- QCM         -------------------------------------------------------------------------------------->
     <div class="w3-container" id="qcm" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Low-cost sensor array for environmental monitoring and IoT</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
