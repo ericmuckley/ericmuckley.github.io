@@ -159,10 +159,10 @@ Effective analysis and full utilization of large complex datasets can be prohibi
     <hr style="width:200px;border:1px solid black" class="w3-round">
  
     <p style="text-align: justify;"> 			
-After processing/normalization/regularization of data, it is often necessary to employ more advanced statistical techniques and/or machine learning algorithms. I primarily use the <a href="http://scikit-learn.org/stable/" target="_blank">scikit-learn library</a> in Python and the <a href="https://www.mathworks.com/help/stats/classificationlearner-app.html" target="_blank">classification learner</a> library in MatLab for machine learning treatment of sensor data. Shown below are simple examples of binary classifer algorithms designed to distinguish between the response of a quartz crystal during exposure to CO<sub>2</sub> (blue points) and O<sub>2</sub> (red points). Regularized data is shown in the plot on the left while data with learned classification boundaries using different classification algorithms are shown to the right. In this case, the k-nearest neighbors (k-NN) algorithm results in >95% accuracy in distinguishing between CO<sub>2</sub> and O<sub>2</sub>.  </p>
+It is often necessary to employ advanced statistical techniques or machine learning algorithms for analyzing large complex datasets. Shown below are simple examples of binary classifer algorithms designed to distinguish between the response of a quartz crystal during exposure to CO<sub>2</sub> (blue points) and O<sub>2</sub> (red points). Regularized data is shown in the plot on the left while data with learned classification boundaries using different classification algorithms are shown to the right. In this case, the k-nearest neighbors (k-NN) algorithm results in >95% accuracy in distinguishing between CO<sub>2</sub> and O<sub>2</sub>.  </p>
  
   <p style="text-align: justify;">
-Artificial neural networks (ANNs) are powerful machine learning tools used for approaching classification and regression/forecasting problems without the need for an analytical model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. I study performance of different ANN architectures for a given dataset by comparing prediction accuracy and training time for networks containing different numbers of neurons in multiple hidden layers. The diagram below shows an example of ANN performances and training times when the number of neurons in the 1st and 2nd hidden layers are altered. To account for the stochastic nature of ANNs, each pixel represents the average performance/training time of 25 different networks. Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
+Artificial neural networks (ANNs) are powerful machine learning tools used for approximating classification and regression/forecasting problems without the need for an analytical model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. The diagram below shows an example of ANN performances and training times when the number of neurons in the 1st and 2nd hidden layers are altered. To account for the stochastic nature of ANNs, each pixel represents the average performance/training time of 25 different networks. Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
 
 <p style="text-align: justify;"> 
 
@@ -196,11 +196,6 @@ In published journal articles, I describe the use of ANNs for distinguishing bet
 	
 	
 	
-	
-	
-	
-	
-	
   <!-- PEAK FINDING ------------------------------------------------------------------------------------------------     -->	
     <div class="w3-container" id="peaks" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Signal processing + spectral deconvolution</b></h1>
@@ -211,7 +206,7 @@ Analysis of spectral data is central to nearly all fields of science and enginee
 </p>
     
    <p style="text-align: justify;"> 
-With accurate estimates for peak positions, each spectrum can be fit to a linear combination of Gaussian peaks (or any other probability density distribution), as shown below. The combination of peaks (black line) accurately reproduces the original spectrum (red line). The threshold for peak identification can be raised or lowered based on the desired fitting quality and the number of peaks present. After each major peak is identified, the peak positions, amplitudes, and widths are extracted and compared between spectra or tracked over time. Below are histograms measured from over 1000 peaks from the same Raman spectroscopy experiments. The automated spectral analysis algorithm yields accurate, rapid, and reproducible characterization of peak data when manual peak selection and fitting is undesirable or impossible.
+With accurate estimates for peak positions, each spectrum can be fit to a linear combination of Gaussian peaks (or any other probability density distribution). The combination of peaks (black line) accurately reproduces the original spectrum (red line). The threshold for peak identification can be raised or lowered based on the desired fitting quality and the number of peaks present. After each major peak is identified, the peak positions, amplitudes, and widths are extracted and compared between spectra or tracked over time. Below are histograms measured from over 1000 peaks from the same Raman spectroscopy experiments. The automated spectral analysis algorithm yields accurate, rapid, and reproducible characterization of peak data when manual peak selection and fitting is undesirable or impossible.
     </p>   
 
 		    <!-- Photo grid (modal) -->
@@ -251,16 +246,12 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
 	
 	
 	
-	
-	
-	 
-	
   <!-- NOISE ------------------------------------------------------------------------------------------------     -->	
     <div class="w3-container" id="noise" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-black"><b>Noise analysis using statistics and artificial neural networks</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
 	
-<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. Fortunately, it is often possible to obtain useful information from analysis of noise signals. I developed software which performs batch analysis of correlated electrochemical noise. Information buried in the noise may be used for environmental sensing applications in which little or no power is needed for the sensor operation. Shown below are frequency-dependent voltage and current noise measured from metallic carbon nanotubes exposed to different humidities over time. Using the humidity-dependent noise to train an artificial neural network allows accurate prediction of humidity levels when electrochemical noise is monitored.</p>						   
+<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, it is possible to obtain useful information from analysis of noise signals. I developed software which performs batch analysis of correlated electrochemical noise. Information buried in the noise may be used for environmental sensing applications in which little or no power is needed for the sensor operation. Shown below are frequency-dependent voltage and current noise measured from metallic carbon nanotubes exposed to different humidities over time. Using the humidity-dependent noise to train an artificial neural network can allow accurate prediction of humidity levels in real time.</p>						   
 <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-third">
@@ -396,6 +387,9 @@ The array is controlled by custom software written in LabVIEW and the Arduino de
 	
 <h1 class="w3-xlarge w3-text-black"><b>Selected peer-reviewed journal articles</b></h1>
 <p>
+<b>Muckley, E.S.</b>, Naguib, M., Wang, H.W., Vlcek, L., Osti, N.C., Sacci, R.L., Sang, X., Unocic, R.R., Xie, Y., Tyagi, M. and Mamontov, E., 2017. Multimodality of Structural, Electrical, and Gravimetric Responses of Intercalated MXenes to Water. ACS nano, 11(11), pp.11118-11126.
+				   
+<br><br>			   
 <b>Muckley, E.S.</b>, Jacobs, C.B., Vidal, K., Lavrik, N.V., Sumpter, B.G., Ivanov, I.N., 2017. Multi-mode humidity sensing with water-soluble copper phthalocyanine for increased sensitivity and dynamic range. Scientific Reports, 7(1) 9921.			   
 <br><br>				   
 <b>Muckley, E.S.</b>, Jacobs, C.B., Vidal, K., Mahalik, J.P., Kumar, R., Sumpter, B.G. and Ivanov, I.N., 2017. New Insights on Electro-Optical Response of Poly (3, 4-ethylenedioxythiophene): Poly (styrenesulfonate) Film to Humidity. ACS Applied Materials and Interfaces, 9(18), pp.15880-15886.
