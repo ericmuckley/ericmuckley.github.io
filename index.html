@@ -21,7 +21,7 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hardware/software integration</a> 
+    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated systems control</a> 
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
     <a href="#machinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning for sensor data</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
@@ -67,7 +67,8 @@ body {font-size:16px;}
    <!-- MAIN THEME PHOTO ------------------------------------------------------------------------------------------>
   <div class="w3-row-padding">
     <div class="w3">
-      <img src="img/summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar">
+      <img src="img/summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar in the Sierra 
+										    Nevada, CA">
     </div> 
 	</div>
   <!-- Modal for full size images on click-->
@@ -83,38 +84,45 @@ body {font-size:16px;}
 	
   <!-- hardware/software  ------------------------------------------------------------------------------------------------->
   <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Hardware/software integration for automated systems control and data management</b></h1>
+    <h1 class="w3-xlarge w3-text-black"><b>Automated systems control</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
     
-    <p style="text-align: justify;">
-Nanoscale engineering of functional materials has led to development of 0-dimensional (quantum dots and nanoparticles), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXenes, etc.) structures which show promise as building blocks for high-performance optoelectronic devices. Beacuse of their high surface area, thin film/nanostructured materials often exhibit multi-modal (electronic, optical, morphological, viscoelastic, etc.) responses to a broad range of different environmental stimuli (temperature, pressure, humidity, oxygen concentration, etc.).
- 
-Comprehensive characterization of the way in which nanomaterials interact with their environments is vital for improving the stability and performance of organic electronics and environmental sensors like those deployed in wireless sensing networks for internet of things (IoT) applications. In order to efficently characterize the environmental response of multiple materials under a wide range of conditions, I developed a flexible environmental system in which ambient conditions can be controlled and multiple responses of materials/devices are probed <i>in situ</i>. </p>
+	  
+	  <p style="text-align: justify;">
+Recent years have witnessed an explosion in the synthesis and development of functional materials for applications in optoelectronic devices and coatings. Before their deployment in commercial or idustrial applications, these materials must be screened for performance and stability under a broad range of ambient environmental conditions. To facilitate rapid multi-functional materials testing, I built a controlled environmental chamber capable of creating automated sequences of environmental conditions while simultaneously measuring the electrical, optical and gravimetric properties of a broad range of different thin film materials.
+	  </p>
+	  
+	  <p style="text-align: justify;">
+Below is a schematic of the control chamber, where a central computer with custom software controls gas flow, pressure, humidity, temperature, and light intensity with real-time feedback for adjusting temperature, valve positions and gas flow rates. I wrote the ceontral control software in LabVIEW and Python, which interfaces with over ten different scienfitic instruments using IEEE-488 (GPIB), RS-232 and USB communication protocols. The central software developed in python and LabVIEW enables control of over 10 different instruments, automated data collection, and full environmental control. The graphic user interface and actua system are shown below. Click on an image to view a larger version.
+	  </p>  
     
- <p style="text-align: justify;">
-A schematic diagram of the system is shown below. The devices/materials under test are situated in a vacuum chamber where temperature, light intensity, pressure, humidity, and concentrations/mixtures of different gases can be controlled in real-time. While environmental conditions are changing, optical/electrical/gravimetric properties are measured using a combination of source-measure units, network analyzers for electrochemical impedance spectroscopy, and a semiconductor characterization system. Optical absorption is measured by optical spectrometer, and the optical and electrical measurements are correlated to mass changes in the material under test by multiple quartz crystal microbalance (QCM) systems. Correlation of optoelectronic properties to a mass changes provide valuable information about the effect of adsorption or desorption of gas/vapor on the functional properties of the material.</p>
-    
-<p style="text-align: justify;"> 
-Below is a photo of the actual system at the Center for Nanophase Materials Sciences at Oak Ridge National Laboratory. The central software developed in python and LabVIEW enables control of over 10 different instruments, automated data collection, and full environmental control.</p>  
+
+	  
 	  
    <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
-    <div class="w3-half">
+    <div class="w3-third">
       <img src="img/systemflowchart.jpg" style="width:100%" onclick="onClick(this)" alt="environmental system flowchart">
     </div> 
-<div class="w3-half">
-      <img src="img/screenshot2017.jpg" style="width:100%" onclick="onClick(this)" alt="screenshot of custom control software">
+<div class="w3-third">
+      <img src="img/chamber_controller.jpg" style="width:100%" onclick="onClick(this)" alt="screenshot of custom control software">
 </div>  
 	  
-<div class="w3-half">
+<div class="w3-third">
 	<img src="img/chamber.jpg" style="width:100%" onclick="onClick(this)" alt="measurement chamber">    
     </div> 
+	
 	  
+	  
+	  <!--
 	  <div class="w3-half">
 	    <img src="img/chamberlandscape2.jpg" style="width:100%" onclick="onClick(this)" alt="experimental apparatus">
 	    </div>
 	  </div>
-	
+	-->
+	  
+	  
+	  
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -305,6 +313,12 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
     <h1 class="w3-xlarge w3-text-black"><b>Multiscale ultra-wide frequency materials characterization</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
      
+   <p style="text-align: justify;">
+Nanoscale engineering of functional materials has led to development of 0-dimensional (quantum dots and nanoparticles), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXenes, etc.) structures which show promise as building blocks for high-performance optoelectronic devices. Beacuse of their high surface area, thin film/nanostructured materials often exhibit multi-modal (electronic, optical, morphological, viscoelastic, etc.) responses to a broad range of different environmental stimuli (temperature, pressure, humidity, oxygen concentration, etc.).
+ 
+Comprehensive characterization of the way in which nanomaterials interact with their environments is vital for improving the stability and performance of organic electronics and environmental sensors like those deployed in wireless sensing networks for internet of things (IoT) applications. In order to efficently characterize the environmental response of multiple materials under a wide range of conditions, I developed a flexible environmental system in which ambient conditions can be controlled and multiple responses of materials/devices are probed <i>in situ</i>. </p>								   
+								   
+								   
 <p style="text-align: justify;">
 The explosion of new low-dimensional materials and nanostructures highlights the importance of comprehensive high-throughput functional characterization. For characterizing environmental response of materials for sensor applications in particular, it is important to link mesoscale response to nanoscale phenomena under a broad range of excitation frequencies. We begin by using gravimetric techniques such as thermogravimetric analysis (TGA) and quartz crystal microbalance (QCM) to quantify gas/vapor uptake of materials under different environments at nanogram resolution. Analyte uptake is then correlated to changes in functional properties which we measure under ultra-wide frequency excitation. Diret current (DC) electrical resistance, current-voltage (I-V) characteristics, and gate-bias/transistor behavior is measured at steady state (0 Hz). At higher frequencies (0.01 mHz - 8 MHz range), ionic transport, capacitance, and electrical impedance is characterized. These measurements are linked to results from optical experiemnts measured at high frequencies (1 THz range) which enables a "stitching together" of envionmental response all the way from 0 Hz to THz range.</p>
 
