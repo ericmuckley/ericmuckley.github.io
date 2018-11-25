@@ -21,7 +21,7 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated systems control</a> 
+    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a> 
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
     <a href="#machinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning for sensor data</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
@@ -84,33 +84,28 @@ body {font-size:16px;}
 	
   <!-- hardware/software  ------------------------------------------------------------------------------------------------->
   <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Automated systems control</b></h1>
+    <h1 class="w3-xlarge w3-text-black"><b>Automated lab control</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
     
 	  
 	  <p style="text-align: justify;">
-Recent years have witnessed an explosion in the synthesis and development of functional materials for applications in optoelectronic devices and coatings. Before their deployment in commercial or idustrial applications, these materials must be screened for performance and stability under a broad range of ambient environmental conditions. To facilitate rapid multi-functional materials testing, I built a controlled environmental chamber capable of creating automated sequences of environmental conditions while simultaneously measuring the electrical, optical and gravimetric properties of a broad range of different thin film materials.
-	  </p>
-	  
-	  <p style="text-align: justify;">
-Below is a schematic of the control chamber, where a central computer with custom software controls gas flow, pressure, humidity, temperature, and light intensity with real-time feedback for adjusting temperature, valve positions and gas flow rates. I wrote the ceontral control software in LabVIEW and Python, which interfaces with over ten different scienfitic instruments using IEEE-488 (GPIB), RS-232 and USB communication protocols. The central software developed in python and LabVIEW enables control of over 10 different instruments, automated data collection, and full environmental control. The graphic user interface and actua system are shown below. Click on an image to view a larger version.
+Recent years have witnessed an explosion in the synthesis and development of novel functional materials for applications in optoelectronic devices and coatings. These materials must be rapidly and systematically characterized before they can be deployed in commercial or idustrial applications. I used a suite of cutting edge laboratory instuments and custom control software to develop a multi-functional controlled environmental system capable of fully automated chatacterization of thin film materials (bottom left). The system controls gas flow, pressure, humidity, temperature, and light intensity with real-time feedback for adjusting temperature, valve positions and gas flow rates (bottom center). The central control software in written in LabVIEW and Python, which interfaces with over ten different scienfitic instruments using IEEE-488 (GPIB), RS-232 and USB communication protocols, and acccepts user input via a custom GUI written in LabVIEW (bottom right). Click on an image to view a larger version.
 	  </p>  
-    
-
-	  
-	  
    <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-third">
-      <img src="img/systemflowchart.jpg" style="width:100%" onclick="onClick(this)" alt="environmental system flowchart">
+	<img src="img/chamber.jpg" style="width:50%" onclick="onClick(this)" alt="measurement chamber">        
     </div> 
 <div class="w3-third">
-      <img src="img/chamber_controller.jpg" style="width:100%" onclick="onClick(this)" alt="screenshot of custom control software">
-</div>  
-	  
+ <img src="img/systemflowchart.jpg" style="width:100%" onclick="onClick(this)" alt="environmental system flowchart">     
+</div>    
 <div class="w3-third">
-	<img src="img/chamber.jpg" style="width:50%" onclick="onClick(this)" alt="measurement chamber">    
+<img src="img/chamber_controller.jpg" style="width:100%" onclick="onClick(this)" alt="screenshot of custom control software">
     </div>
+	
+	  
+	  
+	  
 	  
 	  
   <!-- Modal for full size images on click-->
@@ -121,7 +116,6 @@ Below is a schematic of the control chamber, where a central computer with custo
       <p id="caption"></p>
     </div>
   </div>
- 
   </div>
 	
 	
@@ -403,7 +397,7 @@ The array is controlled by custom software written in LabVIEW and the Arduino de
 <br>												     
 <p> An example of real-time meachine learning and classification of adsorption isotherms based on their derivatives.</p>
 
-<iframe width="1062" height="371" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>									     												     
+<iframe width="400" height="160" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>									     												     
 <br>
 <p> An example of real-time machine learning and predicting of future sensor data using artificial neural networks in Tensorflow.</p>		
 
