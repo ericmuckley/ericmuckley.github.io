@@ -21,18 +21,22 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a> 
+    <a href="#labcontrol" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a>
+    <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning 			diagnostics</a>
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Neural networks for noise analysis</a> 	  
+    <a href="materials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
+    <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Code</a>
+	
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
-    <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning diagnostics</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Neural networks for noise analysis</a> 
-    <a href="#broadband" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
+
+
     <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
     <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualization + animation</a>
     <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Presentations</a>
     <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Original artwork + music</a>
-    <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Code</a>
+
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact info + other links</a>
   </div>
 </nav>
@@ -83,8 +87,15 @@ body {font-size:16px;}
 
 	
 	
-  <!-- hardware/software  ------------------------------------------------------------------------------------------------->
-  <div class="w3-container" id="hardwaresoftware" style="margin-top:75px">
+	
+	
+	
+	
+	
+	
+	
+  <!-- LAB CONTROL ------------------------------------------------------------------------------------------------->
+  <div class="w3-container" id="labcontrol" style="margin-top:75px">
     <h1 class="w3-xlarge w3-text-black"><b>Automated lab control</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
     
@@ -115,6 +126,147 @@ Recent years have witnessed an explosion in the development of novel functional 
     </div>
 	  </div>
   </div>
+	
+	
+
+	
+	
+	
+	
+	
+<!-- MACHINE LEARNING DIAGNOSTICS-------------------------------------------------------------------------------------->
+    <div class="w3-container" id="machinelearningdiagnostics" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Diagnostics for machine learning models</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+	    
+  <p style="text-align: justify;">
+Artificial neural networks (ANNs) and other machine learning algorithms are powerful tools for creating predictive models. Choosing the most suitable machine learning algorithm and tuning the model parameters are often difficult due to large numbers of degrees of freedom in the model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. Shown below are results from diagnostic software for assessing performance of machine learning models based on average residual, number of training samples, and training time (bottom left). Performance of ANNs based on the number of hidden neurons in the first and second hidden layers in the network is show in the bottom right. Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
+
+	    <!-- Photo grid (modal) -->
+  <div class="w3-row-padding"> 
+    <div class="w3-third">
+	  <img src="img/ANNsamplesplot.jpg" style="width:100%" onclick="onClick(this)" alt="effects of learning rate on performance and training time">
+	</div>
+	 <div class="w3-half">
+      <img src="img/nnmaps.jpg" style="width:100%" onclick="onClick(this)" alt="effects of hidden layer neurons on performance and training time">
+    </div> 
+	</div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+												     
+<p> An example of machine learning classification of adsorption isotherms based on their derivatives is shown in the video below. The three panels compare classification boundaries of underfit, balanced, and overfit models as data is acquired in real time.</p>
+
+<iframe width="600" height="300" src="https://www.youtube.com/embed/b6TPW9VnTuk?autoplay=0&loop=1&playlist=b6TPW9VnTuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    
+  </div> 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+  <!-- NOISE -------------------------------------------------------------------------------------------------->	
+    <div class="w3-container" id="noise" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Noise analysis using artificial neural networks</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+	
+<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, statistics and machine learning may be used to extract useful information from noise signals. Shown below are frequency-dependent voltage and power noise signals produced from metallic carbon nanotubes exposed to changing relative humidity (left, center). The humidity-dependent noise was used to train an artificial neural network, enabling accurate prediction of relative humidity levels in real time based on the sensor noise (right).</p>						   
+<!-- Photo grid (modal) -->
+  <div class="w3-row-padding">										      
+    <div class="w3-third">
+<img src="img/output_3_1.png" style="width:100%" onclick="onClick(this)" alt="frequency-dependent voltage noise">
+</div>																     <div class="w3-third">
+      <img src="img/output_5_2.png" style="width:100%" onclick="onClick(this)" alt="frequency and time-dependent power noise">
+    </div>   												 
+  <div class="w3-third">
+      <img src="img/output_11_1.png" style="width:100%" onclick="onClick(this)" alt="RH sensing predictions">
+    </div>									
+	</div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+		     
+  </div>  	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+<!-- materials characterization   ------------------------------------------------------------------------------------>
+    <div class="w3-container" id="materials" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Multiscale ultra-broadband materials characterization</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+     
+   <p style="text-align: justify;">
+Nanoscale engineering of functional materials has led to development of 0-dimensional (quantum dots and nanoparticles), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXenes, etc.) structures which show promise as building blocks for high-performance optoelectronic devices. For characterizing stability and functionality of synthesized materials, it is important to link mesoscale response to nanoscale phenomena under a broad range of excitation frequencies. Direct current (DC) electrical resistance, current-voltage (I-V) characteristics, and gate-bias/transistor behavior are used to probe steady state (0 Hz) eletrical response. At higher frequencies (0.01 mHz - 8 MHz range), impedance spectroscopy is used to investigate frequency-dependent ionic transport, capacitance, and dielectric constants. These measurements are linked to results from optical experiemnts measured at high frequencies (1 THz range) which enables a "stitching together" of envionmental response all the way from 0 Hz to THz range.</p>
+
+<p style="text-align: justify;">
+I developed a workflow with associated control and analysis software packages to enable streamlined ultra-wide frequency functional mesoscale characterization (electical, optical, gravimetric, viscoelastic) is correlated to nanoscale phenomena using morphological/structural information obtained from atomic force microscopy (AFM), and electrical/surface potential measurements obtained from Kelvin probe force microscopy (KPFM). Gravimetric and viscoelastic probing is carried out using a quartz crystal microbalance (QCM) acoustic thickness-shear mode resonator.</p>
+
+	    
+<!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-twothird">
+      <img src="img/multimodeimage.jpg" style="width:100%" onclick="onClick(this)" alt="multiscale, ultra-wide frequency materials characterization">
+	  </div>											  
+	  </div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>   
+ 
+  </div> 
+	
+	
+	
+	
+	
+			     
+  <!-- --------------------- code --------------------------------->
+    <div class="w3-container" id="code" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Code</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+    <p> I have written software for many projects in Python, LabVIEW, and Matlab. I archived some samples of my code <a href="https://github.com/ericmuckley/code" target="_blank">here</a>.
+ </p>
+  </div>  	
+	
+	
 	
 	
 	
@@ -150,38 +302,7 @@ Analysis and utilization of complex datasets is often prohibitively labor-intens
 	
 	
 
-<!-- MACHINE LEARNING DIAGNOSTICS-------------------------------------------------------------------------------------->
-    <div class="w3-container" id="machinelearningdiagnostics" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Diagnostics for machine learning models</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
-	    
-  <p style="text-align: justify;">
-Artificial neural networks (ANNs) and other machine learning algorithms are powerful tools for creating predictive models. Choosing the most suitable machine learning algorithm and tuning the model parameters are often difficult due to large numbers of degrees of freedom in the model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. Shown below are results from diagnostic software for assessing performance of machine learning models based on average residual, number of training samples, and training time (bottom left). Performance of ANNs based on the number of hidden neurons in the first and second hidden layers in the network is show in the bottom right. Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
-
-	    <!-- Photo grid (modal) -->
-  <div class="w3-row-padding"> 
-    <div class="w3-third">
-	  <img src="img/ANNsamplesplot.jpg" style="width:100%" onclick="onClick(this)" alt="effects of learning rate on performance and training time">
-	</div>
-	 <div class="w3-half">
-      <img src="img/nnmaps.jpg" style="width:100%" onclick="onClick(this)" alt="effects of hidden layer neurons on performance and training time">
-    </div> 
-	</div>
-	    
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-												     
-<p> An example of real-time machine learning classification of adsorption isotherms based on their derivatives is shown in the video below. The three panels show classification boundaries of underfit, balanced, and overfit models.</p>
-
-<iframe width="400" height="160" src="https://www.youtube.com/embed/b6TPW9VnTuk?autoplay=0&loop=1&playlist=b6TPW9VnTuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	    
-  </div> 	
+	
 	
 	
 	
@@ -235,35 +356,7 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
 	
 	
 	
-  <!-- NOISE -------------------------------------------------------------------------------------------------->	
-    <div class="w3-container" id="noise" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Noise analysis using artificial neural networks</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
-	
-<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, statistics and machine learning may be used to extract useful information from noise signals. Shown below are frequency-dependent voltage and power noise signals produced from metallic carbon nanotubes exposed to changing relative humidity (left, center). The humidity-dependent noise was used to train an artificial neural network, enabling accurate prediction of relative humidity levels in real time based on the sensor noise (right).</p>						   
-<!-- Photo grid (modal) -->
-  <div class="w3-row-padding">										      
-    <div class="w3-third">
-<img src="img/output_3_1.png" style="width:100%" onclick="onClick(this)" alt="frequency-dependent voltage noise">
-</div>																     <div class="w3-third">
-      <img src="img/output_5_2.png" style="width:100%" onclick="onClick(this)" alt="frequency and time-dependent power noise">
-    </div>   												 
-  <div class="w3-third">
-      <img src="img/output_11_1.png" style="width:100%" onclick="onClick(this)" alt="RH sensing predictions">
-    </div>									
-	</div>
-	    
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-		     
-  </div>  	
-	
+
 	
 	
 		     
@@ -273,43 +366,7 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
 		     
 		     
 
-<!-- broadband materials characterization   ------------------------------------------------------------------------------------>
-    <div class="w3-container" id="broadband" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Multiscale ultra-wide frequency materials characterization</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
-     
-   <p style="text-align: justify;">
-Nanoscale engineering of functional materials has led to development of 0-dimensional (quantum dots and nanoparticles), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXenes, etc.) structures which show promise as building blocks for high-performance optoelectronic devices. Beacuse of their high surface area, thin film/nanostructured materials often exhibit multi-modal (electronic, optical, morphological, viscoelastic, etc.) responses to a broad range of different environmental stimuli (temperature, pressure, humidity, oxygen concentration, etc.).
- 
-Comprehensive characterization of the way in which nanomaterials interact with their environments is vital for improving the stability and performance of organic electronics and environmental sensors like those deployed in wireless sensing networks for internet of things (IoT) applications. In order to efficently characterize the environmental response of multiple materials under a wide range of conditions, I developed a flexible environmental system in which ambient conditions can be controlled and multiple responses of materials/devices are probed <i>in situ</i>. </p>								   
-								   
-								   
-<p style="text-align: justify;">
-The explosion of new low-dimensional materials and nanostructures highlights the importance of comprehensive high-throughput functional characterization. For characterizing environmental response of materials for sensor applications in particular, it is important to link mesoscale response to nanoscale phenomena under a broad range of excitation frequencies. We begin by using gravimetric techniques such as thermogravimetric analysis (TGA) and quartz crystal microbalance (QCM) to quantify gas/vapor uptake of materials under different environments at nanogram resolution. Analyte uptake is then correlated to changes in functional properties which we measure under ultra-wide frequency excitation. Diret current (DC) electrical resistance, current-voltage (I-V) characteristics, and gate-bias/transistor behavior is measured at steady state (0 Hz). At higher frequencies (0.01 mHz - 8 MHz range), ionic transport, capacitance, and electrical impedance is characterized. These measurements are linked to results from optical experiemnts measured at high frequencies (1 THz range) which enables a "stitching together" of envionmental response all the way from 0 Hz to THz range.</p>
-
-     
-<p style="text-align: justify;">
-The ultra-wide frequency mesoscale characterization is then correlated to nanoscale phenomena using morphological/structural information obtained from atomic force microscopy (AFM), and electrical/surface potential measurements obtained from Kelvin probe force microscopy (KPFM). This workflow allows comprehensive materials characterization and allows us to link the environmental response of sensor materials across an ultra-wide frequency range and connent mesoscale to nanoscale, optical to electronic, and functional response to gravimetric response.</p>
-
-	    
-<!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-twothird">
-      <img src="img/multimodeimage.jpg" style="width:100%" onclick="onClick(this)" alt="multiscale, ultra-wide frequency materials characterization">
-	  </div>											  
-	  </div>
-	    
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>   
-	    
-	    
-  </div> 	
+	
 		     
 		     
 		     
@@ -559,15 +616,7 @@ Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and
 		     
 		     
 		     
-		     
-  <!-- --------------------- code --------------------------------->
-    <div class="w3-container" id="code" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Code</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
- 
-    <p> I have written programs for many projects in Python, LabVIEW, and Matlab. I archived some samples of my code <a href="https://github.com/ericmuckley/code" target="_blank">here</a>.
- </p>
-  </div>  		     
+	     
 		     
 		     
 		     
