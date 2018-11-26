@@ -23,9 +23,9 @@ body {font-size:16px;}
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#hardwaresoftware" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a> 
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
-    <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning model disgnostics</a>
+    <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning diagnostics</a>
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Signal processing + deconvolution</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Noise analysis with machine learning</a> 
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Neural networks for noise analysis</a> 
     <a href="#broadband" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
     <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
     <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualization + animation</a>
@@ -156,7 +156,7 @@ Analysis and utilization of complex datasets is often prohibitively labor-intens
     <hr style="width:200px;border:1px solid black" class="w3-round">
 	    
   <p style="text-align: justify;">
-Artificial neural networks (ANNs) and other machine learning algorithms are powerful tools for creating predictive models. Choosing the most suitable machine learning algorithm and tuning the model parameters are often difficult due to the large number of degrees of freedom in the model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. I wrote diagnostic software for assessing performance of machine learning models based on average residual, number of training samples, and training time (bottom left). I also assess the performance of ANNs based on the number of hidden neurons in the first and second hidden layers in the network (bottom right). Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
+Artificial neural networks (ANNs) and other machine learning algorithms are powerful tools for creating predictive models. Choosing the most suitable machine learning algorithm and tuning the model parameters are often difficult due to large numbers of degrees of freedom in the model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the prediction accuracy achieved by the network. Shown below are results from diagnostic software for assessing performance of machine learning models based on average residual, number of training samples, and training time (bottom left). Performance of ANNs based on the number of hidden neurons in the first and second hidden layers in the network is show in the bottom right. Analysis of network performance enables the end user to select the balance between accuracy and training time desired for a specific application.</p>
 
 	    <!-- Photo grid (modal) -->
   <div class="w3-row-padding"> 
@@ -176,7 +176,11 @@ Artificial neural networks (ANNs) and other machine learning algorithms are powe
       <p id="caption"></p>
     </div>
   </div>
-	      
+												     
+<p> An example of real-time machine learning classification of adsorption isotherms based on their derivatives is shown in the video below. The three panels show classification boundaries of underfit, balanced, and overfit models.</p>
+
+<iframe width="400" height="160" src="https://www.youtube.com/embed/b6TPW9VnTuk?autoplay=0&loop=1&playlist=b6TPW9VnTuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    
   </div> 	
 	
 	
@@ -233,28 +237,20 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
 	
   <!-- NOISE -------------------------------------------------------------------------------------------------->	
     <div class="w3-container" id="noise" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Noise analysis using statistics and artificial neural networks</b></h1>
+    <h1 class="w3-xlarge w3-text-black"><b>Noise analysis using artificial neural networks</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
 	
-<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, it is possible to obtain useful information from analysis of noise signals. I developed software which performs batch analysis of correlated electrochemical noise. Information buried in the noise may be used for environmental sensing applications in which little or no power is needed for the sensor operation. Shown below are frequency-dependent voltage and current noise measured from metallic carbon nanotubes exposed to different humidities over time. Using the humidity-dependent noise to train an artificial neural network can allow accurate prediction of humidity levels in real time.</p>						   
+<p text-align: justify;"> Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, statistics and machine learning may be used to extract useful information from noise signals. Shown below are frequency-dependent voltage and power noise signals produced from metallic carbon nanotubes exposed to changing relative humidity (left, center). The humidity-dependent noise was used to train an artificial neural network, enabling accurate prediction of relative humidity levels in real time based on the sensor noise (right).</p>						   
 <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding">										      
     <div class="w3-third">
-      <img src="img/output_3_0.png" style="width:100%" onclick="onClick(this)" alt="frequency-dependent voltage noise">
-   </div> 										      
-    <div class="w3-third">
-<img src="img/output_3_1.png" style="width:100%" onclick="onClick(this)" alt="frequency-dependent current noise">
+<img src="img/output_3_1.png" style="width:100%" onclick="onClick(this)" alt="frequency-dependent voltage noise">
 </div>																     <div class="w3-third">
       <img src="img/output_5_2.png" style="width:100%" onclick="onClick(this)" alt="frequency and time-dependent power noise">
-    </div>   
-													 
+    </div>   												 
   <div class="w3-third">
       <img src="img/output_11_1.png" style="width:100%" onclick="onClick(this)" alt="RH sensing predictions">
-    </div>  
-	  <div class="w3-third">
-      <img src="img/output_12_0.png" style="width:100%" onclick="onClick(this)" alt="average error in RH sensing predictions">
-    </div>   															
-															
+    </div>									
 	</div>
 	    
   <!-- Modal for full size images on click-->
@@ -264,8 +260,7 @@ With accurate estimates for peak positions, each spectrum can be fit to a linear
       <img id="img01" class="w3-image">
       <p id="caption"></p>
     </div>
-  </div>   
-
+  </div>
 		     
   </div>  	
 	
