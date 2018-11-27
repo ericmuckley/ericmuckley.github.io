@@ -22,9 +22,10 @@ body {font-size:16px;}
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#labcontrol" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a>
+    <a href="#realtimemachinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Real-time machine learning</a>
     <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning 			diagnostics</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Neural networks for noise analysis</a> 	  
-    <a href="materials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artificial neural networks for noise analysis</a> 	  
+    <a href="#materials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
     <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Code</a>
 	
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
@@ -32,9 +33,10 @@ body {font-size:16px;}
 
 
     <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
-    <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualization + animation</a>
+
     <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
     <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Presentations</a>
+    <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualization + animation</a>  
     <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Original artwork + music</a>
 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact info + other links</a>
@@ -134,9 +136,53 @@ Recent years have witnessed an explosion in the development of novel functional 
 	
 	
 	
+	
+	
+<!-- REAL TIME MACHINE LEARNING -------------------------------------------------------------------------------------->
+    <div class="w3-container" id="realtimemachinelearning" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Real-time machine learning</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+	    
+  <p style="text-align: justify;">
+In most cases, machine learning is used for ex situ analysis in which a large data set is collected and used to create a static model. To reap the benefits of predictive analytics in real-time, it is possible to stream data directly from acquisition sources into model training. This allows creation of dynnamic models which change over time as training data evolves. </p>
+												     
+<p> An example of real-time machine learning regression is shown in the video below. The four panels from bottom to top correpond to relative humidity, response of a humidity sensor, the regression model and future prediction, and the residual errors between predicted/modeled response and actual sensor response. The model and prediction change over time data is acquired and added to the training set.</p>
+	    
+<iframe width="300" height="900" src="https://www.youtube.com/embed/qShslUHae9w?autoplay=0&loop=1&playlist=qShslUHae9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	   <br>
+<p> An example of real-time machine learning classification is shown in the video below. The model is trained to distinguish between three types of adsorption isotherms using real-time acquisition of isotherm data. As more data is added to the training set, classification boundaries evolve to accomodate the new samples. The three panels compare classification boundaries between three common classification models: support vector machines (SVMs) with linear and radial basis function (RBF) kernels, and a decision tree.</p>
+	    
+<iframe width="600" height="300" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    
+	    
+  </div> 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <!-- MACHINE LEARNING DIAGNOSTICS-------------------------------------------------------------------------------------->
     <div class="w3-container" id="machinelearningdiagnostics" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Diagnostics for machine learning models</b></h1>
+    <h1 class="w3-xlarge w3-text-black"><b>Diagnostics for machine learning performance</b></h1>
     <hr style="width:200px;border:1px solid black" class="w3-round">
 	    
   <p style="text-align: justify;">
@@ -423,24 +469,7 @@ The array is controlled by custom software written in LabVIEW and the Arduino de
 	
 		     
 		     
-		     
-  <!-- Videos --------------------------------------------------------------------------------------->
-    <div class="w3-container" id="videos" style="margin-top:75px">
-    <h1 class="w3-xlarge w3-text-black"><b>Visualization + Animation</b></h1>
-    <hr style="width:200px;border:1px solid black" class="w3-round">
- 
-						   
-<p> I am interested in conveying complex ideas in simple eye-pleasing ways. Some visualizations and animations I created can be viewed on YouTube <a href="https://www.youtube.com/channel/UCqGGQcXtgbpwpJbayYol0xA?view_as=subscriber" target="_blank">here</a>.</p>
-													  		
-<br>												     
-<p> An example of real-time meachine learning and classification of adsorption isotherms based on their derivatives.</p>
-
-<iframe width="400" height="160" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>									     												     
-<br>
-<p> An example of real-time machine learning and predicting of future sensor data using artificial neural networks in Tensorflow.</p>		
-
-<iframe width="260" height="315" src="https://www.youtube.com/embed/qShslUHae9w?autoplay=0&loop=1&playlist=qShslUHae9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>											     
-  </div>   	     
+	     
 		     
 		     
 		     
@@ -575,6 +604,33 @@ Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and
 
 	
 	
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+		     
+  <!-- Videos --------------------------------------------------------------------------------------->
+    <div class="w3-container" id="videos" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Visualization + Animation</b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+ 
+						   
+<p> I am interested in conveying complex ideas in simple eye-pleasing ways. Some visualizations and animations I created can be viewed on YouTube <a href="https://www.youtube.com/channel/UCqGGQcXtgbpwpJbayYol0xA?view_as=subscriber" target="_blank">here</a>.</p>
+
+  </div>   				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
+				  
 	
 	
   <!-- art  ----------------------------------------------------------------------------------------------------------------------->
