@@ -24,7 +24,7 @@ body {font-size:16px;}
     <a href="#labcontrol" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a>
     <a href="#realtimemachinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Real-time machine learning</a>
     <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning 			diagnostics</a>
-    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artificial neural networks for noise     analysis</a> 	  
+    <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artificial neural networks for noise analysis</a>     <a href="#brew" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Smart beer brewing system</a>  
     <a href="#materials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
     <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
     <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spectral processing</a>
@@ -256,8 +256,48 @@ Artificial neural networks (ANNs) and other machine learning algorithms are powe
 	
 	
 	
-	
-	
+
+		     
+
+<!-- Smart brewing system-------------------------------------------------------------------------------------->
+    <div class="w3-container" id="brew" style="margin-top:75px">
+    <h1 class="w3-xlarge w3-text-black"><b>Smart beer brewing system </b></h1>
+    <hr style="width:200px;border:1px solid black" class="w3-round">
+	    
+  <p style="text-align: justify;">
+Using a raspberry pi computer, camera, and array of sensors, I built a smart brewing system for monitoring fermentation of home-brewed beer and wine. The sensors and camera are placed over the top of the fermentation vessel and covered with a plastic bag to trap gases emitted from the fermenting liquid and ensure atmospheric stability. The camera acquires images of the fermentation at specific time intervals and sensors measure tepmerature, pressure, relative humidity, and alcohol concentration over time. The data is continuously transferred over wifi to a remote computer where it is plotted in real-time to allow tracking of the fermentation progress.</p>
+
+	    <!-- Photo grid (modal) -->
+  <div class="w3-row-padding"> 
+    <div class="w3-third">
+	  <img src="img/carboy.JPG" style="width:100%" onclick="onClick(this)" alt="fermenter with sensors and camera">
+	</div>
+	 <div class="w3-third">
+      <img src="img/carboy_bag.JPG" style="width:100%" onclick="onClick(this)" alt="fermenter and sensors covered with plastic bag">
+    </div> 
+	</div>
+	    
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+												     
+<p style="text-align: justify;"> An example of data streaming from the sensors can be seen in the video below. The system integrates sensor data with images taken of the fermenter so that the appearance of the fermented beer can be linked to chemical changes. </p>
+
+<iframe width="800" height="450" src="https://www.youtube.com/embed/_vpxnixSp3A?autoplay=0&loop=1&playlist=_vpxnixSp3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	    
+  </div> 
+			     
+		     
+
+		     
+		     
+		     
+		     
 	
 	
 	
