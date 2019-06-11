@@ -24,8 +24,7 @@
             <a href="#labcontrol" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Automated lab control</a>
             <a href="#realtimemachinelearning" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Real-time machine learning</a>
             <a href="#machinelearningdiagnostics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Machine learning 			diagnostics</a>
-            <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artificial neural networks for noise analysis</a>     <a href="#brew" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Smart beer brewing system</a>  
-            <a href="#materials" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Materials characterization</a>  
+            <a href="#noise" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Artificial neural networks for noise analysis</a>     <a href="#brew" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Smart beer brewing system</a>
             <a href="#batchsensoranalytics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Batch sensor analytics</a> 
             <a href="#peaks" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Spectral processing</a>
             <a href="#qcm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-cost sensor array</a>
@@ -49,14 +48,9 @@
          <!-- Header ---------------------------------------------------------------------------------------------------------->
          <div class="w3-container" style="margin-top:70px" id="showcase">
             <h1 class="w3-xxlarge"><b>Welcome</b></h1>
-            <!--<h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>-->
-            <!--
-               <h4> Here you can view some of my projects, publications, artwork, and code. 
-                <br>
-               Scroll down or click on a link to explore. </h4> -->
-            <p> 	I am a scientist and engineer interested in developing cutting-edge technology. <br>
+            <p> 	I am a scientist and engineer interested in developing innovative technologies. <br>
                My interests include sensors, robotics, machine learning, IoT, software development,<br>
-               3D animation, materials science, physics, art, travel, timelapses and homebrewing. 
+               physics, materials, 3D animation, art, travel, timelapses and brewing. 
                <br>
                <br>
                Scroll down or click on a link to explore some of my projects. <br>
@@ -84,18 +78,13 @@
             <h1 class="w3-xlarge w3-text-black"><b>Automated lab control</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
             <p style="text-align: justify;">
-               Recent years have witnessed an explosion in the development of novel functional materials for applications in optoelectronic devices and coatings. These materials must be thoroughly characterized before they can be deployed in commercial or idustrial applications. I developed a fully-automated materials characterization system (bottom center) which uses custom software (bottom left) to control a suite of precision laboratory instuments (bottom right). The system controls gas flow, pressure, humidity, temperature, and light intensity with real-time feedback for adjusting heating, valve positions and gas flow rates. The central control software is written in LabVIEW and Python and interfaces with over ten different scienfitic instruments using IEEE-488 (GPIB), RS-232 and USB communication protocols. Click on an image to view a high resolution version.
+               Advances in materials synthesis have led to a proliferation of novel materials for sensors, optoelectronics and thin film coatings. Before they can be deployed in commercial or idustrial applications, these materials must be thoroughly screened for functionality and stability under a broad range of environmental conditions. This screening process is time-consuming and often requires multiple experienced researchers. I developed an integrated multifuntional environmental system (Figure (a) below) for rapid multi-modal characterization of materials and sensors. The system controls environmental conditions with real-time feedback (Figure (b) below), with auxilary flow cells for additional measurements (Figure (c) below). Material properties are measured across an ultra-broad frequency range spanning electrical, gravimetric/vsicoelastic, and optical functional modes (Figure (d) below). I wrote custom software to control the system (Figure below) which interfaces with over 15 different scienfitic instruments and performs real-time data analytics, modeling, and machine learing for enabling autonomous experiments. The system is frequently used by international researchers at Oak Ridge National Laboratory. Click on an image to view a high resolution version.
             </p>
             <!-- Photo grid (modal) -->
             <div class="w3-row-padding">
                <div class="w3-twothird">
                   <img src="img/IMES_broadband.JPG" style="width:100%" onclick="onClick(this)" alt="capabilities of the autonomous characterization system">
                </div>
-               <!--
-                  <div class="w3-third">
-                  	<img src="img/chamber.jpg" style="width:100%" onclick="onClick(this)" alt="measurement chamber">        
-                  </div>   
-                  	-->  
                <br> <br>   
                <div class="w3-twothird">
                   <img src="img/IMES_screenshot.JPG" style="width:100%" onclick="onClick(this)" alt="Python-based control software">     
@@ -210,31 +199,6 @@
             <p style="text-align: justify;"> An example of data streaming from the sensors can be seen in the video below. The system integrates sensor data with images taken of the fermenter so that the appearance of the fermented beer can be linked to chemical changes. </p>
             <iframe width="800" height="450" src="https://www.youtube.com/embed/_vpxnixSp3A?autoplay=0&loop=1&playlist=_vpxnixSp3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
-         <!-- materials characterization   ------------------------------------------------------------------------------------>
-         <div class="w3-container" id="materials" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Multiscale ultra-broadband materials characterization</b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
-               Nanoscale engineering of functional materials has led to development of 0-dimensional (quantum dots and nanoparticles), 1-dimensional (nanowires), and 2-dimensional (graphene, MoS<sub>2</sub>,  MXenes, etc.) structures which show promise as building blocks for high-performance optoelectronic devices. For characterizing stability and functionality of synthesized materials, it is important to link mesoscale response to nanoscale phenomena under a broad range of excitation frequencies. Direct current (DC) electrical resistance, current-voltage (I-V) characteristics, and gate-bias/transistor behavior are used to probe steady state (0 Hz) eletrical response. At higher frequencies (0.01 mHz - 8 MHz range), impedance spectroscopy is used to investigate frequency-dependent ionic transport, capacitance, and dielectric constants. These measurements are linked to results from optical experiemnts measured at high frequencies (1 THz range) which enables a "stitching together" of envionmental response all the way from 0 Hz to THz range.
-            </p>
-            <p style="text-align: justify;">
-               I developed a workflow with associated control and analysis software packages to enable streamlined ultra-wide frequency functional mesoscale characterization (electical, optical, gravimetric, viscoelastic) is correlated to nanoscale phenomena using morphological/structural information obtained from atomic force microscopy (AFM), and electrical/surface potential measurements obtained from Kelvin probe force microscopy (KPFM). Gravimetric and viscoelastic probing is carried out using a quartz crystal microbalance (QCM) acoustic thickness-shear mode resonator.
-            </p>
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-               <div class="w3-twothird">
-                  <img src="img/multimodeimage.jpg" style="width:100%" onclick="onClick(this)" alt="multiscale, ultra-wide frequency materials characterization">
-               </div>
-            </div>
-            <!-- Modal for full size images on click-->
-            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-               <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-               <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                  <img id="img01" class="w3-image">
-                  <p id="caption"></p>
-               </div>
-            </div>
-         </div>
          <!-- BATCH SENSOR ANALYTICS  ---------------------------------------------------------------------------------------->
          <div class="w3-container" id="batchsensoranalytics" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Batch analytics for sensor data</b></h1>
@@ -305,6 +269,8 @@
             </p>
             <h1 class="w3-large w3-text-black"><b>Selected peer-reviewed journal articles</b></h1>
             <p>
+             Ahmadi, M., <b> Muckley, E.S. </b>, Ivanov, I.N., Lorenz, M., Li, X., Ovchinnikova, O.S., Lukosi, E., Tisdale, J., Blount, E., Kravchenko, I.I. and Kalinin, S.V., 2019. Environmental Gating and Galvanic Effects in Single Crystals of Organic-Inorganic Halide Perovskites. ACS applied materials & interfaces. 11, 16, pp. 14722-14733.				  
+               <br><br>	
                <b>Muckley, E.S.</b>, Naguib, M. and Ivanov, I.N., 2018. Multi-modal, ultrasensitive, wide-range humidity sensing with Ti3 C2 film. Nanoscale, 10(46), pp.21689-21695.				  
                <br><br>				  
                <b>Muckley, E.S.</b>, Collins, L., Ievlev, A.V., Ye, X., Kisslinger, K., Sumpter, B.G., Lavrik, N.V., Nam, C.Y. and Ivanov, I.N., 2018. Light-activated hybrid nanocomposite film for water and oxygen sensing. ACS applied materials & interfaces, 10(37), pp.31745-31754.
@@ -358,6 +324,8 @@
             <hr style="width:200px;border:1px solid black" class="w3-round">
             <h1 class="w3-large w3-text-black"><b>International conference presentations + invited talks</b></h1>
             <p>
+               <b>Muckley, E.S.</b>, Ivanov, I.N., Can adding sensor modalities lower detection limits and improve sensitivity? May 2019. FORMILK School 2019. Budapest, Hungary.
+               <br><br>
                <b>Muckley, E.S.</b>, Ivanov, I.N., Computer-controlled probing of thin films and interfaces. September 2018. 
                1st North American Symposium on Dynamic Vapor Sorption Sciences. Philadelphia, PA.
                <br><br>
@@ -399,7 +367,7 @@
          <div class="w3-container" id="code" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Code</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p> I have written software for many projects in Python, LabVIEW, and Matlab. I archived some samples of my code <a href="https://github.com/ericmuckley/code" target="_blank">here</a>.
+            <p> I have written software for many projects in Python, LabVIEW, and Matlab. I archived some old samples of my code <a href="https://github.com/ericmuckley/code" target="_blank">here</a>. Please contact me to see code from recent projects.
             </p>
          </div>
          <!-- Videos --------------------------------------------------------------------------------------->
