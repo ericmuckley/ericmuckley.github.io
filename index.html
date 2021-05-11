@@ -5,6 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+      <link rel="icon" src="img/favicon.ico" type="image/x-icon">
 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -70,35 +71,19 @@
          
          
          
-         <!-- Header ---------------------------------------------------------------------------------------------------------->
-         <div class="jumbotron">
-            <h1 class="display-4">Eric Muckley</h1>
-         </div>
-         
-         
-         <div class="w3-container" style="margin-top:70px" id="showcase">
-            <h1 class="w3-xxlarge"><b>Welcome</b></h1>
-            <p> 	I am a scientist and engineer interested in developing innovative technologies. <br>
-               My interests include sensors, robotics, machine learning, IoT, software development,<br>
-               physics, materials, 3D animation, art, travel, timelapses and brewing. 
+         <!-- Header ------------------------------------------------------------->
+         <div class="jumbotron mt-5" style="background-color: teal;" id="showcase">
+            <h1 class="display-4">Welcome</h1>
+            <p class="lead">
+               I'm a scientist/engineer interested in innovative technologies. My interests include software developent, machine learning, sensing, robotics, physics, materials, 3D animation, art, travel, timelapses and brewing. 
                <br>
                <br>
-               Scroll down or click on a link to explore some of my projects. <br>
-               Click on any image to view a high resolution version. <br>
+               Scroll down or click on a link to explore some of my projects and click on any image to view a high resolution version.
             </p>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
          </div>
          
          
-         
-         
-         
-         
-         
-         
-         
-         
-         <!-- MAIN THEME PHOTO ------------------------------------------------------------------------------------------>
+         <!-- MAIN THEME PHOTO ----------------------------------------------------------->
          <div class="w3-row-padding">
             <div class="w3">
                <img src="img/summitfade.jpg" style="width:100%" onclick="onClick(this)" alt="Summit of Mount Julius Caesar in the Sierra 
@@ -124,19 +109,21 @@
          
          
          
-         <!-- LAB CONTROL ------------------------------------------------------------------------------------------------->
+         <!-- LAB CONTROL ---------------------------------------------------->
          <div class="w3-container" id="labcontrol" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Automated lab control</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
+            <p class="lead">
                Advances in materials synthesis have led to a proliferation of novel materials for sensors, optoelectronics and thin film coatings. Before they can be deployed in commercial or idustrial applications, these materials must be thoroughly screened for functionality and stability under a broad range of environmental conditions. This screening process is time-consuming and often requires multiple experienced researchers. I developed an integrated multifuntional environmental system (Figure (a) below) for rapid multi-modal characterization of materials and sensors. The system controls environmental conditions with real-time feedback (Figure (b) below), with auxilary flow cells for additional measurements (Figure (c) below). Material properties are measured across an ultra-broad frequency range spanning electrical, gravimetric/vsicoelastic, and optical functional modes (Figure (d) below). I wrote custom software to control the system (Figure below) which interfaces with over 15 different scienfitic instruments and performs real-time data analytics, modeling, and machine learing for enabling autonomous experiments. The system is frequently used by international researchers at Oak Ridge National Laboratory. Click on an image to view a high resolution version. <br><br>
                For a more detailed description, see the <a href="https://github.com/ericmuckley/IMES" target="_blank">IMES project page</a><br><br>        
             </p>
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-               <div class="w3-twothird">
-                  <img src="img/IMES_broadband.JPG" style="width:100%" onclick="onClick(this)" alt="capabilities of the autonomous characterization system">
-               </div>
+
+            <div >
+               <img src="img/IMES_broadband.JPG" style="width:100%" onclick="onClick(this)" alt="capabilities of the autonomous characterization system">
+            </div>
+
+
+               
                <br> <br>   
                <div class="w3-twothird">
                   <img src="img/IMES_screenshot.JPG" style="width:100%" onclick="onClick(this)" alt="Python-based control software">     
