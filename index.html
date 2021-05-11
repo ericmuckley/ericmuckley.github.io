@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <link rel="icon" src="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" src="/img/favicon.ico" type="image/x-icon">
 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
@@ -72,7 +72,7 @@
          
          
          <!-- Header ------------------------------------------------------------->
-         <div class="jumbotron mt-5" style="background-color: teal;" id="showcase">
+         <div class="jumbotron mt-5 text-light" style="background-color: teal;" id="showcase">
             <h1 class="display-4">Welcome</h1>
             <p class="lead">
                I'm a scientist/engineer interested in innovative technologies. My interests include software developent, machine learning, sensing, robotics, physics, materials, 3D animation, art, travel, timelapses and brewing. 
@@ -114,21 +114,22 @@
             <h1 class="w3-xlarge w3-text-black"><b>Automated lab control</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
             <p class="lead">
-               Advances in materials synthesis have led to a proliferation of novel materials for sensors, optoelectronics and thin film coatings. Before they can be deployed in commercial or idustrial applications, these materials must be thoroughly screened for functionality and stability under a broad range of environmental conditions. This screening process is time-consuming and often requires multiple experienced researchers. I developed an integrated multifuntional environmental system (Figure (a) below) for rapid multi-modal characterization of materials and sensors. The system controls environmental conditions with real-time feedback (Figure (b) below), with auxilary flow cells for additional measurements (Figure (c) below). Material properties are measured across an ultra-broad frequency range spanning electrical, gravimetric/vsicoelastic, and optical functional modes (Figure (d) below). I wrote custom software to control the system (Figure below) which interfaces with over 15 different scienfitic instruments and performs real-time data analytics, modeling, and machine learing for enabling autonomous experiments. The system is frequently used by international researchers at Oak Ridge National Laboratory. Click on an image to view a high resolution version. <br><br>
+               Advances in materials synthesis have led to a proliferation of novel materials for sensors, optoelectronics and thin film coatings. Before they can be deployed in commercial or idustrial applications, these materials must be thoroughly screened for functionality and stability under a broad range of environmental conditions. This screening process is time-consuming and often requires multiple experienced researchers.
+               <br><br>
+               I developed an integrated multifuntional environmental system (Figure (a) below) for rapid multi-modal characterization of materials and sensors. The system controls environmental conditions with real-time feedback (Figure (b) below), with auxilary flow cells for additional measurements (Figure (c) below). Material properties are measured across an ultra-broad frequency range spanning electrical, gravimetric/vsicoelastic, and optical functional modes (Figure (d) below). I wrote custom software to control the system (Figure below) which interfaces with over 15 different scienfitic instruments and performs real-time data analytics, modeling, and machine learing for enabling autonomous experiments. The system is frequently used by international researchers at Oak Ridge National Laboratory. Click on an image to view a high resolution version. <br><br>
                For a more detailed description, see the <a href="https://github.com/ericmuckley/IMES" target="_blank">IMES project page</a><br><br>        
             </p>
 
-            <div >
+            <div>
                <img src="img/IMES_broadband.JPG" style="width:100%" onclick="onClick(this)" alt="capabilities of the autonomous characterization system">
             </div>
 
 
-               
-               <br> <br>   
-               <div class="w3-twothird">
-                  <img src="img/IMES_screenshot.JPG" style="width:100%" onclick="onClick(this)" alt="Python-based control software">     
-               </div>
+            <br><br>   
+            <div>
+               <img src="img/IMES_screenshot.JPG" style="width:100%" onclick="onClick(this)" alt="Python-based control software">     
             </div>
+
             <!-- Modal for full size images on click-->
             <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
                <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -140,7 +141,10 @@
          </div>
          <br>	
          <p> A brief overview of the system and its capabilities is outlined in the following video.  </p>
-         <iframe width="100%" src="https://www.youtube.com/embed/TG-s2J7XrX8?autoplay=0&loop=1&playlist=TG-s2J7XrX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    	
+         <div width=100%>
+            <iframe style="width:60%;" src="https://www.youtube.com/embed/TG-s2J7XrX8?autoplay=0&loop=1&playlist=TG-s2J7XrX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>    
+         </div>	
          
          
          
@@ -156,18 +160,27 @@
          <div class="w3-container" id="realtimemachinelearning" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Real-time machine learning</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
+            <p class="lead">
                In most cases, machine learning is used to create a predictive model from a large static dataset. To reap the benefits of predictive analytics in real-time, it is possible to stream data directly from acquisition sources into model training. This enables dynamic models which improve as training data evolves. 
             </p>
-            <p style="text-align: justify;">
+            <p class="lead">
                An example of real-time machine learning classification is shown in the video below. The model is trained to distinguish between three types of adsorption isotherms using real-time acquisition of isotherm data. As more data is added to the training set, classification boundaries evolve to accomodate the new samples. The three panels compare classification boundaries between three common classification models: support vector machines (SVMs) with linear and radial basis function (RBF) kernels, and a decision tree.
             </p>
-            <iframe width="600" height="300" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+
+            <div width=100%>
+               <iframe style="width:60%;" src="https://www.youtube.com/embed/iIOD1UxuxVo?autoplay=0&loop=1&playlist=iIOD1UxuxVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+               </iframe>    
+            </div>
+
             <br>	    
-            <p style="text-align: justify;">
+            <p class="lead">
                An example of real-time machine learning regression is shown in the video below. The four panels from bottom to top correpond to relative humidity, response of a humidity sensor, the regression model and future prediction, and the residual errors between predicted/modeled response and actual sensor response. The model and prediction evolve as new data is acquired and added to the training set.
             </p>
-            <iframe width="500" height="500" src="https://www.youtube.com/embed/qShslUHae9w?autoplay=0&loop=1&playlist=qShslUHae9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	    
+
+            <div width=100%>
+               <iframe style="width:60%;" src="https://www.youtube.com/embed/qShslUHae9w?autoplay=0&loop=1&playlist=qShslUHae9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+               </iframe>	    
+            </div>
          </div>
          
          
@@ -185,28 +198,23 @@
          <div class="w3-container" id="machinelearningdiagnostics" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Diagnostics for machine learning performance</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
+            <p class="lead">
                Artificial neural networks (ANNs) and other machine learning algorithms are powerful tools for creating predictive models, but tuning of model parameters is often difficult due to the large number of degrees of freedom in the model. One of the primary challenges associated with the use of ANNs is optimization of the network design, as ANNs may contain many hidden neuron layers, each containing large numbers of neurons. Furthermore, learning rate and quality and quantity of data used for training/testing/validatting the network may significantly impact the model performance. Shown below are results from diagnostic software for assessing performance of machine learning models based on average residual, number of training samples, and training time (bottom left). Performance of ANNs based on the number of hidden neurons in the first and second hidden layers in the network is show in the bottom right. Model diagnostics enable the end user to select the desired balance between accuracy and training time for a specific application and assess whether a model has been over/under-trained.
             </p>
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-               <div class="w3-third">
+
+               <div>
                   <img src="img/ANNsamplesplot.jpg" style="width:100%" onclick="onClick(this)" alt="effects of learning rate on performance and training time">
                </div>
-               <div class="w3-half">
+
+               <div>
                   <img src="img/nnmaps.jpg" style="width:100%" onclick="onClick(this)" alt="effects of hidden layer neurons on performance and training time">
                </div>
+
+            <p class="lead">An example of machine learning classification of adsorption isotherms based on their derivatives is shown in the video below. The three panels compare classification boundaries of underfit, balanced, and overfit models as data is acquired in real time.
+            </p>
+            <div>
+               <iframe width="600" height="300" src="https://www.youtube.com/embed/b6TPW9VnTuk?autoplay=0&loop=1&playlist=b6TPW9VnTuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <!-- Modal for full size images on click-->
-            <div id="modal01" class="w3-modal w3-gray" style="padding-top:0" onclick="this.style.display='none'">
-               <span class="w3-button w3-gray w3-xxlarge w3-display-topright">×</span>
-               <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-                  <img id="img01" class="w3-image">
-                  <p id="caption"></p>
-               </div>
-            </div>
-            <p style="text-align: justify;"> An example of machine learning classification of adsorption isotherms based on their derivatives is shown in the video below. The three panels compare classification boundaries of underfit, balanced, and overfit models as data is acquired in real time.</p>
-            <iframe width="600" height="300" src="https://www.youtube.com/embed/b6TPW9VnTuk?autoplay=0&loop=1&playlist=b6TPW9VnTuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
          
          
