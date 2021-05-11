@@ -38,8 +38,6 @@
             <a href="#brew" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Smart beer brewing system</a>
             <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications + papers</a>
             <a href="#presentations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Presentations</a>
-            <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Code</a>
-            <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visualization + animation</a>  
             <a href="#art" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Original artwork + music</a>
             <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact info + other links</a>
          </div>
@@ -71,7 +69,7 @@
 
          
          <!-- Header ------------------------------------------------------------->
-         <div class="jumbotron mt-5" style="background-color: teal;" id="showcase">
+         <div class="jumbotron mt-10" style="background-color: teal;" id="showcase">
             <h1 class="display-4 text-light">Welcome</h1>
             <p class="lead text-light">
                I'm a scientist/engineer interested in innovative technologies. My interests include software developent, machine learning, sensing, robotics, physics, materials, 3D animation, art, travel, timelapses and brewing. 
@@ -103,7 +101,7 @@
          
          
          <!-- LAB CONTROL ---------------------------------------------------->
-         <div class="container mt-5" id="labcontrol">
+         <div class="container mt-10" id="labcontrol">
             <h1>Automated lab control</h1>
             <hr class="my-4">
             <p class="lead">
@@ -138,7 +136,7 @@
          
          
 
-         <div class="container mt-5" id="realtimemachinelearning">
+         <div class="container mt-10" id="realtimemachinelearning">
             <h1>Real-time machine learning</h1>
             <hr class="my-4">
             <p class="lead">
@@ -172,7 +170,7 @@
          
          
 
-         <div class="container mt-5" id="machinelearningdiagnostics">
+         <div class="container mt-10" id="machinelearningdiagnostics">
             <h1>Diagnostics for machine learning performance</h1>
             <hr class="my-4">
             <p class="lead">
@@ -204,7 +202,7 @@
          
          
          
-         <div class="container mt-5" id="noise">
+         <div class="container mt-10" id="noise">
             <h1>Noise analysis using artificial neural networks</h1>
             <hr class="my-4">
             <p class="lead">Every physical measurement undergoes small variations due to environmental fluctuations and/or limitations in instrument/sensor precision. The "noise" associated with a measured signal is usually viewed as detrimental to the quality of the measurement. However, statistics and machine learning may be used to extract useful information from noise signals. Shown below are frequency-dependent voltage and power noise signals produced from metallic carbon nanotubes exposed to changing relative humidity. The humidity-dependent noise was used to train an artificial neural network, enabling accurate prediction of relative humidity levels in real time based on the sensor noise (figure on the right).</p>
@@ -231,7 +229,7 @@
                                  
                                  
 
-         <div class="container mt-5" id="batchsensoranalytics">
+         <div class="container mt-10" id="batchsensoranalytics">
             <h1>Batch analytics for sensor data</h1>
             <hr class="my-4">
             <p class="lead"> 
@@ -251,7 +249,7 @@
                                  
                                  
 
-         <div class="container mt-5" id="peaks">
+         <div class="container mt-10" id="peaks">
             <h1>Spectral processing and deconvolution</h1>
             <hr class="my-4">
             <p class="lead">Analysis of spectral data is central to nearly all fields of science and engineering. Deconvoluting a spectrum into its constituent peaks is essential for tracking the properties of individual components during dynamic peak shifting. I built a peak fitting algorithm which allows automated identification and fitting of spectral data containing multiple peaks so that peak parameters may be extracted in real-time. The video below shows real-time fitting of multi-peak spectra of an acoustic resonator (left). Peak positions are tracked over time to enable prediction of future peak positions. The positions, widths, and model parameters are extracted from each peak automatically and tracked over time (center and right panels).
@@ -274,62 +272,49 @@
          
          
    
-         <div class="w3-container" id="qcm" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Low-cost sensor array for environmental monitoring and IoT applications</b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
-               Demand for low cost sensors has exploded with proliferation and deveopment of internet of things (IoT) devices, including personal wearable sensors, "smart" textiles, and autonomous vehicles, which often rely on the use of wireless sensor networks to continuously relay data back to network nodes where data processing is performed. Rapid systematic testing of new sensors and sensing materials is essential for increasing quantity and improving quality of environmental data acquired by sensing networks. The quartz crystal microbalance (QCM) is a bulk acoustic wave sensor used for probing molecular adsorption/desorption events with sub-nanogram resolution. The QCM has found use in a wide range of sensing applications, including gas/vapor sensing for environmental monitoring, detection of proteins and enzymes for biomedical sensing, and inclusion in sensor arrays for electronic nose (e-nose) technologies. Commercially-available QCM systems are often prohibitively expensive (over $2,000 per sensor) for many applications, particularly when used in arrays containing multiple crystals. To circumvent this problem, I developed a low-cost QCM array using an open-source Pierce oscillator circuit built by <a href="http://openqcm.com/" target="_blank">openQCM</a> and powered by the versatile <a href="https://www.arduino.cc/" target="_blank">Arduino</a> prototyping platform.  
+         <div class="container mt-10" id="qcm">
+            <h1>Low-cost sensor array for environmental monitoring and IoT applications</h1>
+            <hr class="my-4">
+            <p class="lead">Demand for low cost sensors has exploded with proliferation and deveopment of internet of things (IoT) devices, including personal wearable sensors, "smart" textiles, and autonomous vehicles, which often rely on the use of wireless sensor networks to continuously relay data back to network nodes where data processing is performed. Rapid systematic testing of new sensors and sensing materials is essential for increasing quantity and improving quality of environmental data acquired by sensing networks. The quartz crystal microbalance (QCM) is a bulk acoustic wave sensor used for probing molecular adsorption/desorption events with sub-nanogram resolution. The QCM has found use in a wide range of sensing applications, including gas/vapor sensing for environmental monitoring, detection of proteins and enzymes for biomedical sensing, and inclusion in sensor arrays for electronic nose (e-nose) technologies. Commercially-available QCM systems are often prohibitively expensive (over $2,000 per sensor) for many applications, particularly when used in arrays containing multiple crystals. To circumvent this problem, I developed a low-cost QCM array using an open-source Pierce oscillator circuit built by <a href="http://openqcm.com/" target="_blank">openQCM</a> and powered by the versatile <a href="https://www.arduino.cc/" target="_blank">Arduino</a> prototyping platform.  
             </p>
-            <p style="text-align: justify;"> The 6-crystal prototype can be easily inserted and removed from a testing chamber where reponse of the sensor array is studied under different environmental conditions. The advantage of a multi-crystal array is that each crystal can be coated with a different sensing film, which allows simultaneous characterization of up to 6 sensor materials under identical environmental conditions.   </p>
-            <p style="text-align: justify;"> 
+            <p class="lead">The 6-crystal prototype can be easily inserted and removed from a testing chamber where reponse of the sensor array is studied under different environmental conditions. The advantage of a multi-crystal array is that each crystal can be coated with a different sensing film, which allows simultaneous characterization of up to 6 sensor materials under identical environmental conditions.</p>
+            <p cllass="lead"> 
                The array is controlled by custom software written in LabVIEW and the Arduino development platform and is inherently scalable, where each additional crystal requires ~$100, which is ~10 times less expensive than most commercially-available QCM systems. When compared against the $2,500 commercial QCM system manufactured by a leading QCM supplier, the custom-built system achieves the same resolution and even faster response times. A published conference proceedings article describing the QCM array and its associated machine learning applications can be found <a href="http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2563458" target="_blank">here</a>.
             </p>
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-               <div class="w3-third">
+            <div class="row">
+               <div class="col-5">
                   <img src="img/crystals.jpg" style="width:100%" onclick="onClick(this)" alt="6-crystal sensor array">
                </div>
-               <div class="w3-half">  
+               <div class="col-7">  
                   <img src="img/crystalsinchamber.jpg" style="width:100%" onclick="onClick(this)" alt="sensor array inside controlled testing chamber">    
                </div>
             </div>
-
          </div>
                                  
                                  
                                  
                                  
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-                                 
-         <!-- Smart brewing system-------------------------------------------------------------------------------------->
-         <div class="w3-container" id="brew" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Smart beer brewing system </b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;">
-               Using a raspberry pi computer, camera, array of sensors and custom software, I built a smart brewing system for monitoring fermentation of homebrewed beer and wine. The sensors and camera are placed over the top of the fermentation vessel and covered with a plastic bag to trap gases emitted from the fermenting liquid and ensure atmospheric stability. The camera acquires images of the fermentation at specific time intervals and sensors measure tepmerature, pressure, relative humidity, and alcohol concentration (measured by MQ-X gas sensors) over time. The data is continuously transferred over wifi to a remote computer where it is plotted in real-time to allow tracking of the fermentation progress.
+
+         <div class="container mt-10" id="brew">
+            <h1>Smart beer brewing system</h1>
+            <hr class="my-4">
+            <p class="lead">Using a raspberry pi computer, camera, array of sensors and custom software, I built a smart brewing system for monitoring fermentation of homebrewed beer and wine. The sensors and camera are placed over the top of the fermentation vessel and covered with a plastic bag to trap gases emitted from the fermenting liquid and ensure atmospheric stability. The camera acquires images of the fermentation at specific time intervals and sensors measure tepmerature, pressure, relative humidity, and alcohol concentration (measured by MQ-X gas sensors) over time. The data is continuously transferred over wifi to a remote computer where it is plotted in real-time to allow tracking of the fermentation progress.
             </p>
-            <!-- Photo grid (modal) -->
-            <div class="w3-row-padding">
-               <div class="w3-third">
+            <div class="row">
+               <div class="col">
                   <img src="img/carboy.JPG" style="width:100%" onclick="onClick(this)" alt="fermenter with sensors and camera">
                </div>
-               <div class="w3-third">
+               <div class="col">
                   <img src="img/carboy_bag.JPG" style="width:100%" onclick="onClick(this)" alt="fermenter and sensors covered with plastic bag">
                </div>
             </div>
 
-            <p class="lead"> An example of data streaming from the sensors can be seen in the video below. The system integrates sensor data with images taken of the fermenter so that the appearance of the fermented beer can be linked to chemical changes. </p>
-            <iframe width="800" height="450" src="https://www.youtube.com/embed/_vpxnixSp3A?autoplay=0&loop=1&playlist=_vpxnixSp3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="lead">An example of data streaming from the sensors can be seen in the video below. The system integrates sensor data with images taken of the fermenter so that the appearance of the fermented beer can be linked to chemical changes. </p>
+            <div class="container" style="width:100%; height:0; padding-bottom:56.25%; position:relative;">
+               <iframe src="https://www.youtube.com/embed/_vpxnixSp3A?autoplay=0&loop=1&playlist=_vpxnixSp3A" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+            </div>
+
+
          </div>
          
          
@@ -338,27 +323,16 @@
          
          
          
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         <!-- PUBLICATIONS ----------------------------------------------------------------------------------------->
-         <div class="w3-container" id="pubs" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Publications and papers</b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p style="text-align: justify;"> 
-               For an updated list of publications and other research projects, visit my pages at <a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a> or 
+         <div class="container mt-10" id="pubs">
+            <h1>Publications and papers</h1>
+            <hr class="my-4">
+            <p class="lead">For an updated list of publications and other research projects, visit my profiles on <a href="https://scholar.google.com/citations?user=KnSc4mMAAAAJ&hl=en&oi=ao" target="_blank">Google scholar</a> or 
                <a href="https://www.researchgate.net/profile/Eric_Muckley" target="_blank">ResearchGate</a>.  
             </p>
-            <h1 class="w3-large w3-text-black"><b>Selected peer-reviewed journal articles</b></h1>
 
             <ul class="list-group">
-               <li class="list-group-item"><b>Muckley, E.S.</b>, Collins, L., Srijanto, B.R. and Ivanov, I.N., 2020. Machine learning‐enabled correlation and modeling of multimodal response of thin film to environment on macro and nanoscale using “Lab‐on‐a‐Crystal”. Advanced Functional Materials, 30(10), p.1908010.</li>
+               <li class="list-group-item text-light" style="background-color:teal;"><h3>Selected peer-reviewed journal articles</h3></li>
+               <li class="list-group-item"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/adfm.201908010" target="_blank"><b>Muckley, E.S.</b>, Collins, L., Srijanto, B.R. and Ivanov, I.N., 2020. Machine learning‐enabled correlation and modeling of multimodal response of thin film to environment on macro and nanoscale using “Lab‐on‐a‐Crystal”. Advanced Functional Materials, 30(10), p.1908010.</a></li>
                <li class="list-group-item"><b>Muckley, E.S.</b>, Aytug, T., Mayes, R., Lupini, A.R., Carrillo, J.M.Y., Goswami, M., Sumpter, B.G. and Ivanov, I.N., 2019. Hierarchical TiO2:Cu2O nanostructures for gas/vapor sensing and CO2 sequestration. ACS applied materials & interfaces, 11(51), pp.48466-48475.  </li>
                <li class="list-group-item">Ahmadi, M., <b> Muckley, E.S. </b>, Ivanov, I.N., Lorenz, M., Li, X., Ovchinnikova, O.S., Lukosi, E., Tisdale, J., Blount, E., Kravchenko, I.I. and Kalinin, S.V., 2019. Environmental Gating and Galvanic Effects in Single Crystals of Organic-Inorganic Halide Perovskites. ACS applied materials & interfaces. 11, 16, pp. 14722-14733.</li>
                <li class="list-group-item"><b>Muckley, E.S.</b>, Naguib, M. and Ivanov, I.N., 2018. Multi-modal, ultrasensitive, wide-range humidity sensing with Ti3 C2 film. Nanoscale, 10(46), pp.21689-21695.</li>
@@ -374,43 +348,23 @@
                <li class="list-group-item"><b>Muckley, E.S.</b>, Nelson, A.J., Jacobs, C.B. and Ivanov, I.N., 2016. Multimodal probing of oxygen and water interaction with metallic and semiconducting carbon nanotube networks under ultraviolet irradiation. Journal of Photonics for Energy, 6(2), pp.025506-025506.</li>
                <li class="list-group-item">Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and Ivanov, I.N., 2016. Imaging of electrical response of NiOx under controlled environment with sub-25-nm resolution. Journal of Photonics for Energy, 6(3), pp.038001-038001.</li>
                <li class="list-group-item"><b>Muckley, E.S.</b>, Miller, N., Jacobs, C.B., Gredig, T. and Ivanov, I.N., 2016. Morphology-defined interaction of copper phthalocyanine with O2/H2O. Journal of Photonics for Energy, 6(4), pp.045501-045501.</li>
+
+               <li class="list-group-item text-light" style="background-color:teal;"><h3>White papers</h3></li>
+               <li class="list-group-item"><a href="papers/OPVdegradation.pdf" download>Degradation mechanisms in low bandgap polymer-fullerene photovoltaic devices</a></li>
+               <li class="list-group-item"><a href="papers/solar_feasibility_study.pdf" download>Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, California</a></li>
+               <li class="list-group-item"><a href="papers/water_policy_recommendation.pdf" download>Review and recommendation for United States water policy</a></li>
+               <li class="list-group-item"></li>
+
+
+               <li class="list-group-item text-light" style="background-color:teal;"><h3>Academic theses</h3></li>
+
+               <li class="list-group-item"><a href="papers/ESM_PhD_dissertation.pdf" download><b>PhD dissertation</b>: High-throughput multifunctional materials characterization with real-time analytics and feedback</a></li>
+               <li class="list-group-item"><a href="papers/ESM_MS_thesis.pdf" download><b>Master of science thesis</b>: Optimization of film morphology for organic thin film solar cells</a></li>
+               <li class="list-group-item"><a href="papers/ESM_MOT.pdf" download><b>Undergraduate thesis</b>: Constructing a magneto-optical trap for cold atom trapping</a></li>
             </ul>
 
 
-
-
-
-
-    
-            <h1 class="w3-large w3-text-black"><b>White papers</b></h1>
-            <p>	
-               Degradation mechanisms in low bandgap polymer-fullerene photovoltaic devices.	
-               <a href="papers/OPVdegradation.pdf" download>Download PDF</a>
-               <br><br>
-               Feasibility study for photovoltaic array at Bishop Airport in Owens Valley, California.
-               <a href="papers/solar_feasibility_study.pdf" download>Download PDF</a>
-               <br><br>
-               Review and recommendation for United States water policy.	
-               <a href="papers/water_policy_recommendation.pdf" download>Download PDF</a>
-            </p>
-            <br>    
-            <h1 class="w3-large w3-text-black"><b>Academic theses</b></h1>
-            <p>
-               <b>PhD dissertation</b><br>
-               High-throughput multifunctional materials characterization with real-time analytics and feedback.
-               <a href="papers/ESM_PhD_dissertation.pdf" download>Download PDF</a>
-               <br><br>  
-               <b>Master of science thesis</b><br>
-               Optimization of film morphology for organic thin film solar cells.
-               <a href="papers/ESM_MS_thesis.pdf" download>Download PDF</a>
-               <br><br>                                        
-               <b>Undergraduate thesis</b><br>
-               Constructing a magneto-optical trap for cold atom trapping.
-               <a href="papers/ESM_MOT.pdf" download>Download PDF</a>
-                                          
-               <br><br>
- </p>
-    </div>                                       
+         </div>                                       
                                            
                                            
                                            
@@ -419,9 +373,7 @@
                                            
                                            
                                            
-                                           
-                                           
-         <!-- PRESENTATIONS    ------------------------------------------------------------------------------------------------->	
+                     	
          <div class="w3-container" id="presentations" style="margin-top:75px">
             <h1 class="w3-xlarge w3-text-black"><b>Presentations</b></h1>
             <hr style="width:200px;border:1px solid black" class="w3-round">
@@ -441,11 +393,9 @@
             </ul>
 
 
-
-
             <p>
                <b>Muckley, E.S.</b>, Ivanov, I.N., Can adding sensor modalities lower detection limits and improve sensitivity? May 2019. FORMILK School 2019. Budapest, Hungary.
-               <br><br>
+               
                <b>Muckley, E.S.</b>, Ivanov, I.N., Computer-controlled probing of thin films and interfaces. September 2018. 
                1st North American Symposium on Dynamic Vapor Sorption Sciences. Philadelphia, PA.
                <br><br>
@@ -472,71 +422,13 @@
                <b>Muckley, E.S.</b> and Gredig, T., Effect of morphology on performance of organic thin film solar cells. May 2014. California State University Long Beach Student Research Competition. Long Beach, CA, USA. 
                <br>
             </p>
-            <h1 class="w3-large w3-text-black"><b>Published conference preceedings</b></h1>
-            <b>Muckley, E.S.</b>, Anazagasty, C., Jacobs, C.B., Hianik, T. and Ivanov, I.N., 2016, September. Low-cost scalable quartz crystal microbalance array for environmental sensing. In SPIE Organic Photonics+ Electronics (pp. 99440Y-99440Y). International Society for Optics and Photonics.
-            <br><br>
-            <b>Muckley, E.S.</b>, Miller, N., Gredig, T. and Ivanov, I.N., 2016, September. Effect of film morphology on oxygen and water interaction with copper phthalocyanine. In SPIE Organic Photonics+ Electronics (pp. 99440V-99440V). International Society for Optics and Photonics.
-            <br><br>
-            <b>Muckley, E.S.</b>, Nelson, A.J., Jacobs, C.B. and Ivanov, I.N., 2016, February. Effect of UV irradiation on adsorption/desorption of oxygen and water on carbon nanotubes. In SPIE OPTO (pp. 97451K-97451K). International Society for Optics and Photonics.
-            <br><br>
-            Jacobs, C.B., Wang, K., Ievlev, A.V., <b>Muckley, E.S.</b> and Ivanov, I.N., 2016, September. Towards functional assembly of 3D and 2D nanomaterials. In SPIE Nanoscience+ Engineering (pp. 99290C-99290C). International Society for Optics and Photonics.
-            <br><br>
-            Jacobs, C.B., Ievlev, A.V., Collins, L.F., <b>Muckley, E.S.</b>, Joshi, P.C. and Ivanov, I.N., 2016, February. Spatially resolved resistance of NiO nanostructures under humid environment. In SPIE OPTO (pp. 97491Q-97491Q). International Society for Optics and Photonics.   
+ 
          </div>
                                               
                                               
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-         <!-- --------------------- code --------------------------------->
-         <div class="w3-container" id="code" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Code</b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p> I have written software for many projects in Python, LabVIEW, and Matlab. I archived some old samples of my code <a href="https://github.com/ericmuckley/code" target="_blank">here</a>. Please contact me to see code from recent projects.
-            </p>
-         </div>
+                                          
          
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         <!-- Videos --------------------------------------------------------------------------------------->
-         <div class="w3-container" id="videos" style="margin-top:75px">
-            <h1 class="w3-xlarge w3-text-black"><b>Visualization + Animation</b></h1>
-            <hr style="width:200px;border:1px solid black" class="w3-round">
-            <p> I am interested in conveying complex ideas in simple ways using animated plots and 3D models. Some visualizations and animations I created can be viewed on YouTube <a href="https://www.youtube.com/channel/UCqGGQcXtgbpwpJbayYol0xA?view_as=subscriber" target="_blank">here</a>.</p>
-         </div>
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
+
          
          <!-- art  ----------------------------------------------------------------------------------------------------------------------->
          <div class="w3-container" id="art" style="margin-top:75px">
@@ -610,7 +502,7 @@
       </div>
       <!-- W3.CSS Container-->
       <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:60px;padding-right:58px">
-         <p class="w3-center">Eric Muckley. All rights reserved. Copyright &copy; 2019.</p>
+         <p class="w3-center">Eric Muckley. All rights reserved. Copyright &copy; 2022.</p>
       </div>
       <script>
          // Script to open and close sidebar
