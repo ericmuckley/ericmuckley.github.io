@@ -1,5 +1,12 @@
-<script>
-	const items = [
+<script lang="ts">
+	const internalLinks = [
+		{
+			icon: 'palette-fill',
+			url: '/art'
+		}
+	];
+
+	const externalLinks = [
 		{
 			icon: 'linkedin',
 			url: 'https://www.linkedin.com/in/eric-muckley/'
@@ -27,16 +34,21 @@
 	];
 </script>
 
-<nav class="flex px-4 py-3 space-x-2 justify-between">
-	<div class="flex space-x-3">
+<nav class="flex px-4 py-3 space-x-6 justify-between">
+	<div class="flex space-x-4">
 		<a href="/" class="font-mono">eric muckley</a>
-		<a href="/art" class="text-sm">art</a>
+
+		{#each internalLinks as link}
+			<a href={link.url} class="">
+				<i class="bi bi-{link.icon}" />
+			</a>
+		{/each}
 	</div>
 
 	<div class="flex space-x-4">
-		{#each items as item}
-			<a href={item.url} target="_blank">
-				<i class="bi bi-{item.icon}" />
+		{#each externalLinks as link}
+			<a href={link.url} target="_blank">
+				<i class="bi bi-{link.icon}" />
 			</a>
 		{/each}
 	</div>

@@ -6,11 +6,12 @@
 
 @layer base {
 	main {
-		@apply bg-slate-700 min-h-screen h-auto;
+		@apply bg-slate-700 min-h-screen;
 	}
 	h1,
 	h2,
-	h3 {
+	h3,
+	h4 {
 		@apply text-slate-300;
 	}
 	h1 {
@@ -22,16 +23,28 @@
 	h3 {
 		@apply text-xl;
 	}
+	h4 {
+		@apply text-lg;
+	}
 	p {
 		@apply text-slate-400;
 	}
 	footer {
-		@apply text-sm text-slate-300 absolute bottom-0 left-1/2 -translate-x-1/2 -translate-y-1/2 pb-2;
+		@apply text-sm text-slate-300 py-8 text-center;
 	}
 	nav {
 		@apply bg-slate-950;
 	}
 	a {
-		@apply text-green-300 hover:text-green-500;
+		@apply text-emerald-400 hover:text-emerald-600;
+	}
+}
+
+@layer components {
+	.box {
+		@apply bg-slate-800 rounded-2xl p-6 my-8;
+	}
+	.box-title {
+		@apply text-2xl font-semibold mb-6;
 	}
 }

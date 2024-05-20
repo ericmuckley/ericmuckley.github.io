@@ -2,11 +2,9 @@
 
 This is a static SPA built in [SvelteKit](https://kit.svelte.dev/).
 
-
 ## Developing
 
-Download this folder and run 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Download this folder and run
 
 ```bash
 
