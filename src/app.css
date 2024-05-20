@@ -6,7 +6,7 @@
 
 @layer base {
 	main {
-		@apply bg-slate-700 min-h-screen;
+		@apply bg-slate-900 min-h-screen;
 	}
 	h1,
 	h2,
@@ -36,15 +36,15 @@
 		@apply bg-slate-950;
 	}
 	a {
-		@apply text-emerald-400 hover:text-emerald-600;
+		@apply text-teal-400 hover:text-teal-600;
 	}
 }
 
 @layer components {
 	.box {
-		@apply bg-slate-800 rounded-2xl p-6 my-8;
+		@apply bg-slate-800 rounded-2xl p-8 my-12;
 	}
 	.box-title {
-		@apply text-2xl font-semibold mb-6;
+		@apply text-3xl font-semibold mb-6;
 	}
 }

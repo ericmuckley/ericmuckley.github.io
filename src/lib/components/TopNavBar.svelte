@@ -1,9 +1,9 @@
 <script lang="ts">
 	const internalLinks = [
-		{
-			icon: 'palette-fill',
-			url: '/art'
-		}
+		//{
+		//	icon: 'palette-fill',
+		//	url: '/art'
+		//}
 	];
 
 	const externalLinks = [
