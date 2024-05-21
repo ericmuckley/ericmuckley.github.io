@@ -20,7 +20,7 @@
 				</button>
 			</div>
 			<div class="h-screen flex justify-center">
-				<img class="object-scale-down max-h-full" src="/art/{path}" alt={title} />
+				<img class="object-scale-down max-h-full" src={path} alt={title} />
 			</div>
 		</div>
 	</div>
@@ -32,6 +32,6 @@
 			expanded = true;
 		}}
 	>
-		<img class="w-full md:w-64" src="/art/{path}" alt={title} />
+		<img class="w-full md:w-64" src={path} alt={title} />
 	</button>
 {/if}

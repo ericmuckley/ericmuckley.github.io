@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BackButton from '$lib/components/BackButton.svelte';
+	//import BackButton from '$lib/components/BackButton.svelte';
 	import ImagePopout from '$lib/components/ImagePopout.svelte';
 
 	const categories = [
@@ -77,7 +77,7 @@
 	];
 </script>
 
-<BackButton />
+<h1 class="page-title">ART</h1>
 
 {#each categories as category}
 	<div class="box">
@@ -85,7 +85,7 @@
 		<div class="flex flex-wrap gap-10 mt-12">
 			{#each category.items as item}
 				<div>
-					<ImagePopout title={item.title} path={item.path} />
+					<ImagePopout title={item.title} path={'/art/' + item.path} />
 				</div>
 			{/each}
 		</div>
