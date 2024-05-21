@@ -8,8 +8,6 @@
 	--light: #cbd5e1;
 	--dim: #94a3b8;
 	--dim2: #475569;
-	--bright: #2dd4bf;
-	--bright2: #0d9488;
 	--accent: #c084fc;
 	--link: #38bdf8;
 	--link2: #bae6fd;
@@ -47,7 +45,7 @@
 		@apply bg-slate-950;
 	}
 	a {
-		@apply text-link hover:text-link2 font-mono;
+		@apply link;
 	}
 }
 
@@ -57,5 +55,11 @@
 	}
 	.box-title {
 		@apply text-3xl font-semibold mb-6;
+	}
+	.hover-glow {
+		@apply hover:shadow-lg hover:shadow-link hover:scale-105 transition-all duration-200;
+	}
+	.link {
+		@apply text-link hover:text-link2 font-mono;
 	}
 }
