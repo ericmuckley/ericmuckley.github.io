@@ -4,18 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    --light: #cbd5e1;
-    --dim: #94a3b8;
-    --dim2: #475569;
-    --bright: #2dd4bf;
-    --bright2: #0d9488;
-    --accent: #c084fc;
-    --link: #38bdf8;
-    --link2: #bae6fd;
+	--light: #cbd5e1;
+	--dim: #94a3b8;
+	--dim2: #475569;
+	--bright: #2dd4bf;
+	--bright2: #0d9488;
+	--accent: #c084fc;
+	--link: #38bdf8;
+	--link2: #bae6fd;
 }
-
 
 @layer base {
 	main {

@@ -7,13 +7,13 @@
 	<ul class="mt-8 space-y-8">
 		{#each education as item}
 			<li>
-                <h4>{item.degree}</h4>
-                <div class="mt-2 border-dim2 text-sm">
-                    <p>{item.year} {item.location}</p>
-                    <a href="/theses/{item.url}" target="_blank">
-                        {item.thesis}<i class="bi bi-box-arrow-right ml-2" />
-                    </a>                    
-                </div>
+				<h4>{item.degree}</h4>
+				<div class="mt-2 border-dim2 text-sm">
+					<p>{item.year} {item.location}</p>
+					<a href="/theses/{item.url}" target="_blank">
+						{item.thesis}<i class="bi bi-box-arrow-right ml-2" />
+					</a>
+				</div>
 			</li>
 		{/each}
 	</ul>
@@ -46,16 +46,16 @@
 	<p class="box-title">Technical expertise</p>
 	<div class="space-y-8 mt-8">
 		{#each skills as item}
-            <div>
-                <h4>{item.topic}</h4>
-                <div class="mt-4 border-dim2 flex flex-wrap gap-2">
-                    {#each item.items as skill}
-                        <span class="bg-slate-900 px-4 rounded-lg py-1 text-dim text-sm">
-                            {skill}
-                        </span>
-                    {/each}
-                </div>
-            </div>
+			<div>
+				<h4>{item.topic}</h4>
+				<div class="mt-4 border-dim2 flex flex-wrap gap-2">
+					{#each item.items as skill}
+						<span class="bg-slate-900 px-4 rounded-lg py-1 text-dim text-sm">
+							{skill}
+						</span>
+					{/each}
+				</div>
+			</div>
 		{/each}
 	</div>
 </div>

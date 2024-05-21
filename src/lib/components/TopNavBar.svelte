@@ -1,9 +1,9 @@
 <script lang="ts">
 	const internalLinks = [
-        {
-            icon: 'code-slash',
-            url: '/projects'
-        },
+		{
+			icon: 'code-slash',
+			url: '/projects'
+		},
 		{
 			icon: 'palette-fill',
 			url: '/art'
