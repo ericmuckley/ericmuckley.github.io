@@ -24,7 +24,7 @@ export const education = [
 
 export const skills = [
 	{
-		topic: 'AI + language models + NLP',
+		topic: 'AI / NLP',
 		items: [
 			'OpenAI',
 			'Bedrock',
@@ -47,7 +47,64 @@ export const skills = [
 		]
 	},
 	{
-		topic: 'Data science + machine learning',
+		topic: 'Full-stack / cloud',
+		items: [
+			'AWS',
+			'Heroku',
+			'Vercel',
+			'MongoDB',
+			'Javascript',
+			'Typescript',
+			'Node.js',
+			'Express.js',
+			'React',
+			'Next.js',
+			'Sveltekit',
+			'FastAPI',
+			'Django',
+			'Flask',
+            'DyanmoDB',
+            'PostgreSQL',
+            'AWS RDS',
+            'AWS S3',
+            'AWS Lambda',
+            'AWS API Gateway',
+            'AWS EC2',
+            'AWS Amplify',
+			'D3.js',
+			'Plotly.js',
+			'Cytoscape.js',
+			'Three.js',
+			'Tailwind',
+			'Bootstrap',
+			'Material design',
+			'Git',
+			'HTML',
+			'CSS',
+			'AWS'
+		]
+	},
+	{
+		topic: 'Blockchain / web3',
+		items: [
+			'Solidity',
+			'Hardhat',
+			'Truffle',
+			'Infura',
+			'Moralis',
+			'Viem',
+			'Wagmi',
+			'Alchemy',
+			'Magic',
+			'Ethers.js',
+			'Web3.js',
+			'Web3.py',
+			'Etherscan API',
+			'OpenSea API'
+		]
+	},
+	{
+		topic: 'Data science / machine learning',
 		items: [
 			'Pytorch',
 			'Tensorflow',
@@ -66,7 +123,7 @@ export const skills = [
 		]
 	},
 	{
-		topic: 'Hardware + software integration',
+		topic: 'Hardware / software integration',
 		items: [
 			'NI DAQ',
 			'LabView',
@@ -75,36 +132,6 @@ export const skills = [
 			'Arduino',
 			'Adafruit',
 			'Teensy'
-		]
-	},
-	{
-		topic: 'Full-stack web development',
-		items: [
-			'AWS',
-			'Heroku',
-			'Vercel',
-			'MongoDB',
-			'Javascript',
-			'Typescript',
-			'Node.js',
-			'Express.js',
-			'React',
-			'Next.js',
-			'Sveltekit',
-			'FastAPI',
-			'Django',
-			'Flask',
-			'D3.js',
-			'Plotly.js',
-			'Cytoscape.js',
-			'Three.js',
-			'Tailwind',
-			'Bootstrap',
-			'Material design',
-			'Git',
-			'HTML',
-			'CSS',
-			'AWS'
 		]
 	},
 	{
@@ -128,25 +155,6 @@ export const skills = [
 			'XRR',
 			'AGM',
 			'VSM'
-		]
-	},
-	{
-		topic: 'Blockchain + web3',
-		items: [
-			'Solidity',
-			'Hardhat',
-			'Truffle',
-			'Infura',
-			'Moralis',
-			'Viem',
-			'Wagmi',
-			'Alchemy',
-			'Magic',
-			'Ethers.js',
-			'Web3.js',
-			'Web3.py',
-			'Etherscan API',
-			'OpenSea API'
 		]
 	},
 	{
@@ -242,7 +250,7 @@ export const experience = [
 	{
 		years: '2013 - 2014',
 		org: 'California State University Long Beach, CA',
-		roles: [{ name: 'Physics department lecturer', period: '2013 - 2014' }],
+		roles: [{ name: 'Lecturer, Department of Physics and Astronomy', period: '2013 - 2014' }],
 		description: 'Taught Computer Interfacing in Modern Physics and Modern Experimental Physics',
 		url: 'https://www.csulb.edu/'
 	},

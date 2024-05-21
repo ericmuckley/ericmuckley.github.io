@@ -1,9 +1,13 @@
 <script lang="ts">
 	const internalLinks = [
-		//{
-		//	icon: 'palette-fill',
-		//	url: '/art'
-		//}
+        {
+            icon: 'code-slash',
+            url: '/projects'
+        },
+		{
+			icon: 'palette-fill',
+			url: '/art'
+		}
 	];
 
 	const externalLinks = [
@@ -36,7 +40,7 @@
 
 <nav class="flex px-4 py-3 space-x-6 justify-between">
 	<div class="flex space-x-4">
-		<a href="/" class="font-mono">eric muckley</a>
+		<a href="/" class="font-mono">Eric Muckley</a>
 
 		{#each internalLinks as link}
 			<a href={link.url} class="">

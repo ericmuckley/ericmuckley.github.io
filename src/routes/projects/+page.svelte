@@ -3,5 +3,5 @@
 </script>
 
 <BackButton />
-<h1>Art</h1>
+<h1>Projects</h1>
 <p>Coming soon</p>
