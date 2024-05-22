@@ -39,7 +39,7 @@
 </script>
 
 <nav class="flex px-4 py-3 space-x-6 justify-between">
-	<div class="flex space-x-4">
+	<div class="flex space-x-6">
 		<a href="/" class="font-mono">Eric Muckley</a>
 
 		{#each internalLinks as link}

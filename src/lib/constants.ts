@@ -182,16 +182,16 @@ export const patents = [
 		text: 'Additive manufacturing system with at least one electronic nose'
 	},
 	{
+		url: 'https://patentimages.storage.googleapis.com/c9/ef/c3/185ebd80a502f7/US20220091083A1.pdf',
+		text: 'Chemical detection system with at least one electronic nose'
+	},
+	{
 		url: 'https://patentimages.storage.googleapis.com/da/2e/22/6ebb3e19ae7536/US20220091571A1.pdf',
 		text: 'Multimodal dynamic characterization of materials under programmable environments and environment prediction (pending)'
 	},
 	{
-		url: 'https://patentimages.storage.googleapis.com/c9/ef/c3/185ebd80a502f7/US20220091083A1.pdf',
-		text: 'Chemical detection system with at least one electronic nose (pending)'
-	},
-	{
 		url: 'https://patentimages.storage.googleapis.com/db/c0/53/f012135c36b06d/US20220091081A1.pdf',
-		text: 'Aroma detection systems for food and beverage and conversion of detected aromas to natural language descriptors (pending'
+		text: 'Aroma detection systems for food and beverage and conversion of detected aromas to natural language descriptors (pending)'
 	}
 ];
 
