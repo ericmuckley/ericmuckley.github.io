@@ -1,4 +1,4 @@
-# About me
+# ericmuckley
 
 This is a static SPA built in [SvelteKit](https://kit.svelte.dev/).
 
@@ -21,3 +21,9 @@ npm run format
 npm run build
 
 ```
+
+# TODO
+
+- Add DOE dataverse video as project
+- Add space between patent links on homepage
+- Add hikes?
