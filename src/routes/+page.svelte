@@ -4,6 +4,26 @@
 
 <h1 class="page-title">EXPERIENCE</h1>
 
+
+<div class="box">
+	<p class="box-title">Technical expertise</p>
+	<div class="space-y-8 mt-8">
+		{#each skills as item}
+			<div>
+				<h4>{item.topic}</h4>
+				<div class="mt-4 border-dim2 flex flex-wrap gap-2">
+					{#each item.items as skill}
+						<span class="bg-slate-900 px-4 rounded-lg py-1 text-dim text-sm">
+							{skill}
+						</span>
+					{/each}
+				</div>
+			</div>
+		{/each}
+	</div>
+</div>
+
+
 <div class="box">
 	<p class="box-title">Professional experience</p>
 	<ul class="space-y-6 mt-3">
@@ -55,23 +75,6 @@
 	</ul>
 </div>
 
-<div class="box">
-	<p class="box-title">Technical expertise</p>
-	<div class="space-y-8 mt-8">
-		{#each skills as item}
-			<div>
-				<h4>{item.topic}</h4>
-				<div class="mt-4 border-dim2 flex flex-wrap gap-2">
-					{#each item.items as skill}
-						<span class="bg-slate-900 px-4 rounded-lg py-1 text-dim text-sm">
-							{skill}
-						</span>
-					{/each}
-				</div>
-			</div>
-		{/each}
-	</div>
-</div>
 
 <div class="box">
 	<p class="box-title">Peer-reviewed journal publications (30+)</p>
