@@ -25,5 +25,4 @@ npm run build
 # TODO
 
 - Add DOE dataverse video as project
-- Add space between patent links on homepage
 - Add hikes?

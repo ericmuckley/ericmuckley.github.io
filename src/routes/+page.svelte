@@ -88,7 +88,7 @@
 
 <div class="box">
 	<p class="box-title">Patents</p>
-	<ul class="space-y-3 mt-3">
+	<ul class="space-y-8 mt-3">
 		{#each patents as item}
 			<li>
 				<a href={item.url} target="_blank">
