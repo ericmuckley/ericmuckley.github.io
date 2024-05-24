@@ -139,29 +139,22 @@
 					</a>
 				</div>
 			{/if}
-			{#if project.img && project.img.length}
+			{#if (project.img && project.img.length) || (project.vid && project.vid.length)}
 				<div class="mt-4 flex flex-wrap gap-4">
-					{#each project.img as img}
-						<div>
-							<ImagePopout title={img.title} path={'/images/' + img.url} />
-						</div>
-					{/each}
-				</div>
-			{/if}
-
-			{#if project.vid && project.vid.length}
-				<div class="mt-4 flex flex-wrap gap-4">
-					{#each project.vid as vid}
-						<div class="mt-5 w-full">
-							<iframe
-								title={vid.url}
-								src={vid.url}
-								allowfullscreen={true}
-								style="min-height: 40vh; width: 100%"
-							>
-							</iframe>
-						</div>
-					{/each}
+					{#if project.img}
+						{#each project.img as img}
+							<div>
+								<ImagePopout title={img.title} path={'/images/' + img.url} />
+							</div>
+						{/each}
+					{/if}
+					{#if project.vid}
+						{#each project.vid as vid}
+							<div>
+								<iframe title={vid.url} src={vid.url} allowfullscreen={true}> </iframe>
+							</div>
+						{/each}
+					{/if}
 				</div>
 			{/if}
 		</div>
